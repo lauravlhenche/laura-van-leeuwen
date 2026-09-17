@@ -690,6 +690,207 @@
         width: calc(100% - 28px);
       }
     }
+    /* =========================
+   STACKED WINDOWS / PANELS
+========================== */
+
+.window-stack {
+  width: min(calc(100% - 48px), var(--content-width));
+  margin: 22px auto 40px;
+}
+
+.window-panel {
+  background: var(--cream);
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.testimonial-window {
+  padding: 34px 42px;
+}
+
+.testimonial-box {
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.testimonial-book-visual {
+  position: relative;
+  width: 170px;
+  height: 125px;
+  margin: 0 auto;
+}
+
+.mini-book {
+  position: absolute;
+  width: 112px;
+  height: 82px;
+  border: 2px solid #111;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.book-back {
+  left: 5px;
+  top: 8px;
+  transform: rotate(-7deg);
+  background: var(--green-soft);
+}
+
+.book-front {
+  right: 4px;
+  bottom: 4px;
+  transform: rotate(4deg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 14px;
+}
+
+.book-front span {
+  margin-bottom: 5px;
+  color: var(--green-dark);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.book-front strong {
+  font-family: "Lora", serif;
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+.testimonial-content {
+  max-width: 720px;
+}
+
+.testimonial-stars {
+  margin-bottom: 13px;
+  color: #f7b500;
+  font-size: 0.86rem;
+  letter-spacing: 0.1em;
+}
+
+.testimonial-quote {
+  margin: 0 0 20px;
+  font-family: "Lora", serif;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: #292929;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--green-soft);
+
+  display: grid;
+  place-items: center;
+
+  color: #1b7f4b;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.testimonial-name {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.testimonial-role {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 780px) {
+  .window-stack {
+    width: calc(100% - 36px);
+  }
+
+  .testimonial-window {
+    padding: 28px 24px;
+  }
+
+  .testimonial-box {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .testimonial-book-visual {
+    width: 150px;
+    height: 110px;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .window-stack {
+    width: calc(100% - 28px);
+  }
+}
+
+/* responsive */
+@media (max-width: 780px) {
+  .window-stack {
+    width: calc(100% - 36px);
+    margin: 18px auto 28px;
+  }
+
+  .window-panel {
+    border-radius: 15px;
+    padding: 18px;
+  }
+
+  .testimonial-box {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .testimonial-visual {
+    height: 120px;
+  }
+
+  .logo-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 16px;
+  }
+}
+
+@media (max-width: 520px) {
+  .window-stack {
+    width: calc(100% - 28px);
+  }
+
+  .testimonial-quote {
+    font-size: 1.02rem;
+  }
+
+  .logo-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-item {
+    font-size: 1.08rem;
+  }
+}
   </style>
 </head>
 
@@ -954,7 +1155,69 @@
 
 
     </main>
+    
+<section class="window-stack">
 
+  <div class="window-panel testimonial-window">
+
+    <div class="testimonial-box">
+
+      <div class="testimonial-book-visual">
+
+        <div class="mini-book book-back"></div>
+
+        <div class="mini-book book-front">
+          <span>EN → ES</span>
+
+          <strong>
+            Literary<br>
+            Translation
+          </strong>
+        </div>
+
+      </div>
+
+      <div class="testimonial-content">
+
+        <div class="testimonial-stars">
+          ★★★★★
+        </div>
+
+        <blockquote class="testimonial-quote">
+          “I had the pleasure of hiring Laura to translate my book,
+          and I couldn’t be more satisfied with her work. She was
+          exceptionally professional and dedicated, ensuring I was
+          100% happy with the final product. Laura translated the book
+          into European Spanish with remarkable accuracy and attention
+          to detail.”
+        </blockquote>
+
+        <div class="testimonial-author">
+
+          <div class="testimonial-initials">
+            KQ
+          </div>
+
+          <div>
+            <div class="testimonial-name">
+              Karen Quiros
+            </div>
+
+            <div class="testimonial-role">
+              Author
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    
   </div>
 
 </body>
