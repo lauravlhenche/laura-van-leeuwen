@@ -23,7 +23,7 @@
       --orange:#ffb07d;
       --frame:2px;
       --radius:18px;
-      --max:865px;
+      --max:100%;
     }
 
     *{box-sizing:border-box}
@@ -38,12 +38,12 @@
     a{color:inherit;text-decoration:none}
 
     .site{
-      width:min(100%, var(--max));
-      margin:0 auto;
-      background:var(--mint);
-      min-height:100vh;
-      padding:0 2px 2px;
-    }
+  width:100%;
+  margin:0;
+  background:var(--mint);
+  min-height:100vh;
+  padding:0 6px 6px;
+}
 
     /* HEADER */
     .header{
@@ -129,10 +129,11 @@
 
     /* WHITE PANEL */
     .panel{
-      background:var(--paper);
-      border-radius:var(--radius);
-      overflow:hidden;
-    }
+  background:var(--paper);
+  border-radius:18px;
+  overflow:hidden;
+  width:100%;
+}
 
     /* HERO */
     .hero{
