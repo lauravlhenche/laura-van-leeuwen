@@ -429,76 +429,94 @@
       text-transform: uppercase;
     }
 
-    /* =========================
-       BENEFITS
-    ========================== */
+  .expect-grid {
+  width: min(calc(100% - 48px), var(--content-width));
+  margin: 24px auto 40px;
 
-    .benefits {
-      width: min(calc(100% - 48px), var(--content-width));
-      margin: 20px auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 34px;
+}
 
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+.expect-item {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  gap: 22px;
+  align-items: center;
+}
 
-      border-top: 1px solid var(--line);
+.expect-item:nth-child(even) {
+  border-left: 1px solid var(--line);
+  padding-left: 70px;
+}
 
-      padding-bottom: 40px;
-    }
+.expect-icon {
+  width: 66px;
+  height: 66px;
 
-    .benefit {
-      padding: 30px 34px 10px 0;
-
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 15px;
-    }
-
-    .benefit + .benefit {
-      border-left: 1px solid var(--line);
-      padding-left: 40px;
-    }
-
-    .benefit-icon {
-  width: 54px;
-  height: 54px;
-
-  border-radius: 16px;
-
-  background: #eaf8ef;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 18px;
+  background: #f4efe9;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   color: #202020;
-
-  flex-shrink: 0;
-
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.025);
 }
 
-.benefit-icon svg {
-  width: 28px;
-  height: 28px;
+.expect-icon svg {
+  width: 34px;
+  height: 34px;
   display: block;
 }
 
-    .benefit h3 {
-      margin-bottom: 5px;
+.expect-copy h3 {
+  margin: 0 0 7px;
 
-      font-family: "Lora", serif;
-      font-size: 1rem;
-      font-weight: 600;
-    }
+  font-family: "Lora", serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
 
-    .benefit p {
-      color: #444;
+.expect-copy p {
+  margin: 0;
 
-      font-family: "Lora", serif;
-      font-size: 0.84rem;
-      line-height: 1.45;
-    }
+  font-family: "Lora", serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+
+  color: #555;
+}
+
+@media (max-width: 780px) {
+  .expect-grid {
+    width: calc(100% - 36px);
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .expect-item:nth-child(even) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .expect-item {
+    grid-template-columns: 62px 1fr;
+    gap: 18px;
+  }
+
+  .expect-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+  }
+
+  .expect-icon svg {
+    width: 30px;
+    height: 30px;
+  }
+}
 
     /* =========================
        TABLET
@@ -1044,134 +1062,112 @@
       </section>
 
 
-      <section class="benefits">
+     <section class="expect-grid">
 
-
-        <article class="benefit">
-
-          <div class="benefit-icon">
-            📖
-          </div>
-
-          <div>
-
-            <h3>
-              Literary focus
-            </h3>
-
-            <p>
-              Fiction, creative non-fiction and more.
-            </p>
-
-          </div>
-
-        </article>
-
-
-       <article class="benefit">
-
-  <div class="benefit-icon">
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M8 11.5c5.7-1.9 10.8-.8 16 3.1v22.1c-5.1-3.4-10.3-4.4-16-2.6z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-
-      <path d="M40 11.5c-5.7-1.9-10.8-.8-16 3.1v22.1c5.1-3.4 10.3-4.4 16-2.6z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-
-      <path d="M24 14.6v22.1"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"/>
-
-      <path d="M35.5 7.8l1.1 2.4 2.5 1.1-2.5 1.1-1.1 2.4-1.1-2.4-2.5-1.1 2.5-1.1z"
-            fill="#79e8ab"/>
-    </svg>
-  </div>
-
-  <div>
-    <h3>Literary focus</h3>
-    <p>Fiction, creative non-fiction and more.</p>
-  </div>
-
-</article>
-
-<article class="benefit">
-
-  <div class="benefit-icon">
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M12 31.5l-2.5 6.8 6.8-2.5L35.5 16.6a4.6 4.6 0 0 0-6.5-6.5z"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"/>
-
-      <path d="M26.8 12.3l6.5 6.5"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"/>
-
-      <path d="M16 33.5c5.5 2.7 11.6 2.9 17.8.7"
-            fill="none"
-            stroke="#79e8ab"
-            stroke-width="2"
-            stroke-linecap="round"/>
-    </svg>
-  </div>
-
-  <div>
-    <h3>Natural, fluent Spanish</h3>
-    <p>With attention to tone, style and cultural context.</p>
-  </div>
-
-</article>
-
-
-<article class="benefit">
-
-  <div class="benefit-icon">
-    <svg viewBox="0 0 48 48" aria-hidden="true">
-
-      <circle cx="24"
-              cy="24"
-              r="15"
+  <article class="expect-item">
+    <div class="expect-icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M12 31.5l-2.5 6.8 6.8-2.5L35.5 16.6a4.6 4.6 0 0 0-6.5-6.5z"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"/>
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M26.8 12.3l6.5 6.5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+      </svg>
+    </div>
 
-      <path d="M9 24h30
-               M24 9c4.5 4.5 7 9.4 7 15s-2.5 10.5-7 15
-               M24 9c-4.5 4.5-7 9.4-7 15s2.5 10.5 7 15"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"/>
+    <div class="expect-copy">
+      <h3>A natural, fluent Spanish</h3>
+      <p>Your story will read as if it were originally written in Spanish.</p>
+    </div>
+  </article>
 
-      <path d="M39 14l1.4 3.1 3.1 1.4-3.1 1.4-1.4 3.1-1.4-3.1-3.1-1.4 3.1-1.4z"
-            fill="#79e8ab"/>
 
-    </svg>
-  </div>
+  <article class="expect-item">
+    <div class="expect-icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M24 39S8 29.5 8 18.5C8 12.7 12.4 9 17.4 9c3.3 0 5.7 1.7 6.6 3.5C24.9 10.7 27.3 9 30.6 9c5 0 9.4 3.7 9.4 9.5C40 29.5 24 39 24 39Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+      </svg>
+    </div>
 
-  <div>
-    <h3>Stories across borders</h3>
-    <p>Helping great books reach new readers.</p>
-  </div>
+    <div class="expect-copy">
+      <h3>Respect for your voice</h3>
+      <p>The style, tone and unique elements of your story stay intact.</p>
+    </div>
+  </article>
 
-</article>
 
-      </section>
+  <article class="expect-item">
+    <div class="expect-icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <path d="M8 11.5c5.7-1.9 10.8-.8 16 3.1v22.1c-5.1-3.4-10.3-4.4-16-2.6z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M40 11.5c-5.7-1.9-10.8-.8-16 3.1v22.1c5.1-3.4 10.3-4.4 16-2.6z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"/>
+        <path d="M24 14.6v22.1"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+      </svg>
+    </div>
 
+    <div class="expect-copy">
+      <h3>Attention to detail</h3>
+      <p>Consistency, terminology and context, from the first page to the last.</p>
+    </div>
+  </article>
+
+
+  <article class="expect-item">
+    <div class="expect-icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="17" cy="17" r="6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+        <circle cx="31" cy="19" r="5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"/>
+        <path d="M7 38c0-7 4.8-11 10.5-11S28 31 28 38"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+        <path d="M25 29c1.6-1.3 3.8-2 6.1-2 5.4 0 9.9 3.9 9.9 10"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="expect-copy">
+      <h3>A collaborative approach</h3>
+      <p>Clear communication and a smooth process at every stage.</p>
+    </div>
+  </article>
+
+</section>
 
     </main>
     
