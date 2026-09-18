@@ -690,8 +690,8 @@
         width: calc(100% - 28px);
       }
     }
-    /* =========================
-   STACKED WINDOWS / PANELS
+ /* =========================
+   TESTIMONIAL WINDOW
 ========================== */
 
 .window-stack {
@@ -706,115 +706,53 @@
 }
 
 .testimonial-window {
-  padding: 34px 42px;
+  padding: 34px 44px;
 }
 
 .testimonial-box {
   display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 42px;
+  grid-template-columns: 92px 1fr;
+  gap: 30px;
   align-items: center;
 }
 
-.testimonial-book-visual {
-  position: relative;
-  width: 170px;
-  height: 125px;
-  margin: 0 auto;
+.testimonial-photo {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f1f1f1;
 }
 
-.mini-book {
-  position: absolute;
-  width: 112px;
-  height: 82px;
-  border: 2px solid #111;
-  border-radius: 6px;
-  background: #fff;
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
-}
-
-.book-back {
-  left: 5px;
-  top: 8px;
-  transform: rotate(-7deg);
-  background: var(--green-soft);
-}
-
-.book-front {
-  right: 4px;
-  bottom: 4px;
-  transform: rotate(4deg);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 14px;
-}
-
-.book-front span {
-  margin-bottom: 5px;
-  color: var(--green-dark);
-  font-size: 0.58rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.book-front strong {
-  font-family: "Lora", serif;
-  font-size: 0.9rem;
-  line-height: 1.1;
+.testimonial-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+  display: block;
 }
 
 .testimonial-content {
-  max-width: 720px;
-}
-
-.testimonial-stars {
-  margin-bottom: 13px;
-  color: #f7b500;
-  font-size: 0.86rem;
-  letter-spacing: 0.1em;
+  max-width: 850px;
 }
 
 .testimonial-quote {
-  margin: 0 0 20px;
+  margin: 0 0 17px;
   font-family: "Lora", serif;
   font-size: 1.12rem;
-  line-height: 1.6;
+  line-height: 1.62;
   color: #292929;
 }
 
 .testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.testimonial-initials {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--green-soft);
-
-  display: grid;
-  place-items: center;
-
-  color: #1b7f4b;
-  font-size: 0.72rem;
-  font-weight: 800;
-}
-
-.testimonial-name {
   font-size: 0.9rem;
   font-weight: 800;
+  color: var(--text);
 }
 
-.testimonial-role {
-  margin-top: 2px;
+.testimonial-author span {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 @media (max-width: 780px) {
@@ -823,17 +761,17 @@
   }
 
   .testimonial-window {
-    padding: 28px 24px;
+    padding: 28px 26px;
   }
 
   .testimonial-box {
-    grid-template-columns: 1fr;
-    gap: 22px;
+    grid-template-columns: 72px 1fr;
+    gap: 20px;
   }
 
-  .testimonial-book-visual {
-    width: 150px;
-    height: 110px;
+  .testimonial-photo {
+    width: 68px;
+    height: 68px;
   }
 
   .testimonial-quote {
@@ -844,6 +782,15 @@
 @media (max-width: 520px) {
   .window-stack {
     width: calc(100% - 28px);
+  }
+
+  .testimonial-box {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-photo {
+    width: 68px;
+    height: 68px;
   }
 }
 
@@ -1162,26 +1109,14 @@
 
     <div class="testimonial-box">
 
-      <div class="testimonial-book-visual">
-
-        <div class="mini-book book-back"></div>
-
-        <div class="mini-book book-front">
-          <span>EN → ES</span>
-
-          <strong>
-            Literary<br>
-            Translation
-          </strong>
-        </div>
-
+      <div class="testimonial-photo">
+        <img
+          src="karen-quiros.jpg"
+          alt="Karen Quiros"
+        >
       </div>
 
       <div class="testimonial-content">
-
-        <div class="testimonial-stars">
-          ★★★★★
-        </div>
 
         <blockquote class="testimonial-quote">
           “I had the pleasure of hiring Laura to translate my book,
@@ -1193,21 +1128,7 @@
         </blockquote>
 
         <div class="testimonial-author">
-
-          <div class="testimonial-initials">
-            KQ
-          </div>
-
-          <div>
-            <div class="testimonial-name">
-              Karen Quiros
-            </div>
-
-            <div class="testimonial-role">
-              Author
-            </div>
-          </div>
-
+          Karen Quiros, <span>author</span>
         </div>
 
       </div>
