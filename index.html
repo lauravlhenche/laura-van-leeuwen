@@ -190,34 +190,34 @@
       text-transform: uppercase;
     }
 
-    .hero h1 {
-      margin-bottom: 30px;
+.hero h1 {
+  margin-bottom: 30px;
 
-      font-size: clamp(4.2rem, 5.8vw, 6.4rem);
-      line-height: 0.93;
-      letter-spacing: -0.065em;
-      font-weight: 800;
-    }
+  font-size: clamp(3.5rem, 4.7vw, 5.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
 
-    .highlight {
-      position: relative;
-      display: inline-block;
-      z-index: 0;
-    }
+.highlight {
+  position: relative;
+  display: inline;
+  z-index: 0;
+}
 
-    .highlight::after {
-      content: "";
-      position: absolute;
+.highlight::after {
+  content: "";
+  position: absolute;
 
-      left: -2px;
-      right: -5px;
-      bottom: 0.06em;
+  left: 0;
+  right: 0;
+  bottom: 0.05em;
 
-      height: 0.18em;
+  height: 0.18em;
 
-      background: var(--green-soft);
-      z-index: -1;
-    }
+  background: var(--green-soft);
+  z-index: -1;
+}
 
     .hero-description {
       max-width: 570px;
