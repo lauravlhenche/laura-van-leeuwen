@@ -517,66 +517,128 @@
       text-transform: uppercase;
     }
 
-  .expect-grid {
-  width: min(calc(100% - 48px), var(--content-width));
-  margin: 24px auto 40px;
+.benefits-transition {
+  position: relative;
 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 70px;
-  row-gap: 34px;
-}
+  min-height: 360px;
 
-.expect-item {
-  display: grid;
-  grid-template-columns: 74px 1fr;
-  gap: 22px;
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
   align-items: center;
+
+  background: #fff;
+
+  overflow: hidden;
 }
 
-.expect-item:nth-child(even) {
-  border-left: 1px solid var(--line);
-  padding-left: 70px;
+/* zona crema curvada */
+
+.benefits-transition::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -5%;
+  width: 110%;
+  height: 58%;
+
+  background: var(--cream);
+
+  border-radius: 0 0 50% 50% / 0 0 26% 26%;
 }
 
-.expect-icon {
-  width: 66px;
-  height: 66px;
+/* tarjetas */
 
+.benefits-cards {
+  position: relative;
+  z-index: 2;
+
+  width: min(calc(100% - 80px), 1240px);
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+
+  margin-top: 10px;
+}
+
+.benefit-card {
+  min-height: 210px;
+
+  padding: 30px 26px;
+
+  background: #fff;
+
+  border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 18px;
-  background: #f4efe9;
+
+  box-shadow:
+    0 12px 32px rgba(27, 31, 38, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 18px 40px rgba(27, 31, 38, 0.09);
+}
+
+.benefit-card-icon {
+  width: 52px;
+  height: 52px;
+
+  margin-bottom: 22px;
+
+  border-radius: 15px;
+
+  background: var(--green-soft);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #202020;
+  color: #171717;
 }
 
-.expect-icon svg {
-  width: 34px;
-  height: 34px;
+.benefit-card-icon svg {
+  width: 27px;
+  height: 27px;
+
   display: block;
 }
 
-.expect-copy h3 {
-  margin: 0 0 7px;
+.benefit-card h3 {
+  margin: 0 0 10px;
 
   font-family: "Lora", serif;
-  font-size: 1.15rem;
-  font-weight: 600;
+  font-size: 1.05rem;
+  line-height: 1.25;
+
+  color: var(--text);
 }
 
-.expect-copy p {
+.benefit-card p {
   margin: 0;
 
   font-family: "Lora", serif;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.9rem;
+  line-height: 1.55;
 
-  color: #555;
+  color: #626262;
 }
-
+    
 @media (max-width: 780px) {
   .expect-grid {
     width: calc(100% - 36px);
@@ -1041,6 +1103,47 @@
 
   transform: translate(-50%, -50%);
 }
+
+    @media (max-width: 1000px) {
+
+  .benefits-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefits-transition {
+    min-height: 570px;
+  }
+
+  .benefits-transition::before {
+    height: 45%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .benefits-transition {
+    min-height: auto;
+    padding: 70px 0;
+  }
+
+  .benefits-transition::before {
+    height: 220px;
+  }
+
+  .benefits-cards {
+    width: calc(100% - 36px);
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .benefit-card {
+    min-height: auto;
+  }
+
+}
     
   </style>
 </head>
@@ -1244,110 +1347,158 @@
 </section>
 
 
-     <section class="expect-grid">
+<section class="benefits-transition">
 
-  <article class="expect-item">
-    <div class="expect-icon">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M12 31.5l-2.5 6.8 6.8-2.5L35.5 16.6a4.6 4.6 0 0 0-6.5-6.5z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M26.8 12.3l6.5 6.5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"/>
-      </svg>
-    </div>
+  <div class="benefits-cards">
 
-    <div class="expect-copy">
-      <h3>A natural, fluent Spanish</h3>
-      <p>Your story will read as if it were originally written in Spanish.</p>
-    </div>
-  </article>
+    <article class="benefit-card">
 
+      <div class="benefit-card-icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path
+            d="M12 31.5l-2.5 6.8 6.8-2.5L35.5 16.6a4.6 4.6 0 0 0-6.5-6.5z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M26.8 12.3l6.5 6.5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
 
-  <article class="expect-item">
-    <div class="expect-icon">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M24 39S8 29.5 8 18.5C8 12.7 12.4 9 17.4 9c3.3 0 5.7 1.7 6.6 3.5C24.9 10.7 27.3 9 30.6 9c5 0 9.4 3.7 9.4 9.5C40 29.5 24 39 24 39Z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-      </svg>
-    </div>
+      <div>
+        <h3>A natural, fluent Spanish</h3>
+        <p>
+          Your story will read as if it were originally written in Spanish.
+        </p>
+      </div>
 
-    <div class="expect-copy">
-      <h3>Respect for your voice</h3>
-      <p>The style, tone and unique elements of your story stay intact.</p>
-    </div>
-  </article>
+    </article>
 
 
-  <article class="expect-item">
-    <div class="expect-icon">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <path d="M8 11.5c5.7-1.9 10.8-.8 16 3.1v22.1c-5.1-3.4-10.3-4.4-16-2.6z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M40 11.5c-5.7-1.9-10.8-.8-16 3.1v22.1c5.1-3.4 10.3-4.4 16-2.6z"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"/>
-        <path d="M24 14.6v22.1"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"/>
-      </svg>
-    </div>
+    <article class="benefit-card">
 
-    <div class="expect-copy">
-      <h3>Attention to detail</h3>
-      <p>Consistency, terminology and context, from the first page to the last.</p>
-    </div>
-  </article>
+      <div class="benefit-card-icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path
+            d="M24 39S8 29.5 8 18.5C8 12.7 12.4 9 17.4 9c3.3 0 5.7 1.7 6.6 3.5C24.9 10.7 27.3 9 30.6 9c5 0 9.4 3.7 9.4 9.5C40 29.5 24 39 24 39Z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+
+      <div>
+        <h3>Respect for your voice</h3>
+        <p>
+          The style, tone and unique elements of your story stay intact.
+        </p>
+      </div>
+
+    </article>
 
 
-  <article class="expect-item">
-    <div class="expect-icon">
-      <svg viewBox="0 0 48 48" aria-hidden="true">
-        <circle cx="17" cy="17" r="6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"/>
-        <circle cx="31" cy="19" r="5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"/>
-        <path d="M7 38c0-7 4.8-11 10.5-11S28 31 28 38"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"/>
-        <path d="M25 29c1.6-1.3 3.8-2 6.1-2 5.4 0 9.9 3.9 9.9 10"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"/>
-      </svg>
-    </div>
+    <article class="benefit-card">
 
-    <div class="expect-copy">
-      <h3>A collaborative approach</h3>
-      <p>Clear communication and a smooth process at every stage.</p>
-    </div>
-  </article>
+      <div class="benefit-card-icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <path
+            d="M8 11.5c5.7-1.9 10.8-.8 16 3.1v22.1c-5.1-3.4-10.3-4.4-16-2.6z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M40 11.5c-5.7-1.9-10.8-.8-16 3.1v22.1c5.1-3.4 10.3-4.4 16-2.6z"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M24 14.6v22.1"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+
+      <div>
+        <h3>Attention to detail</h3>
+        <p>
+          Consistency, terminology and context, from the first page to the last.
+        </p>
+      </div>
+
+    </article>
+
+
+    <article class="benefit-card">
+
+      <div class="benefit-card-icon">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+
+          <circle
+            cx="17"
+            cy="17"
+            r="6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+
+          <circle
+            cx="31"
+            cy="19"
+            r="5"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+
+          <path
+            d="M7 38c0-7 4.8-11 10.5-11S28 31 28 38"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+
+          <path
+            d="M25 29c1.6-1.3 3.8-2 6.1-2 5.4 0 9.9 3.9 9.9 10"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+
+        </svg>
+      </div>
+
+      <div>
+        <h3>A collaborative approach</h3>
+        <p>
+          Clear communication and a smooth process at every stage.
+        </p>
+      </div>
+
+    </article>
+
+  </div>
 
 </section>
 
