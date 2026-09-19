@@ -161,17 +161,17 @@
       min-height: calc(100vh - 81px);
     }
 
-    .hero {
-      width: min(calc(100% - 48px), var(--content-width));
-      margin: 0 auto;
+.hero {
+  width: min(calc(100% - 48px), var(--content-width));
+  margin: 0 auto;
 
-      padding: 78px 0 42px;
+  padding: 54px 0 28px;
 
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
-      gap: 86px;
-      align-items: center;
-    }
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 0.92fr);
+  gap: 64px;
+  align-items: center;
+}
 
     /* =========================
        LEFT HERO
@@ -191,10 +191,10 @@
     }
 
 .hero h1 {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
-  font-size: clamp(2.5rem, 3.6vw, 4rem);
-  line-height: 0.96;
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  line-height: 0.94;
   letter-spacing: -0.055em;
   font-weight: 800;
 }
@@ -219,15 +219,14 @@
   z-index: -1;
 }
 
-    .hero-description {
-      max-width: 570px;
+.hero-description {
+  max-width: 540px;
+  margin-bottom: 26px;
 
-      margin-bottom: 34px;
-
-      font-family: "Lora", serif;
-      font-size: 1.22rem;
-      line-height: 1.55;
-    }
+  font-family: "Lora", serif;
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
 
     .hero-actions {
       display: flex;
@@ -268,11 +267,14 @@
 }
 
 .hero-proof {
-  margin-top: 34px;
+  margin-top: 24px;
+  padding-top: 14px;
+
   display: flex;
   align-items: center;
+
   width: fit-content;
-  padding-top: 18px;
+
   border-top: 1px solid var(--line);
 }
 
@@ -683,13 +685,13 @@
         justify-content: center;
       }
 
-      .profile-side {
-        max-width: 500px;
-      }
+.profile-side {
+  max-width: 470px;
+}
 
-      .profile-card {
-        text-align: left;
-      }
+.profile-card {
+  padding: 16px 20px;
+}
 
       .benefits {
         width: calc(100% - 36px);
