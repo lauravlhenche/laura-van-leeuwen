@@ -1184,22 +1184,25 @@
 
 }
 
-    /* =========================
-   BOOK PORTFOLIO
+/* =========================
+   OPEN BOOK PORTFOLIO
 ========================== */
 
-.books-showcase {
+.portfolio-books {
   background: #fff;
-  padding: 100px 0 90px;
+
+  padding: 110px 0 100px;
 }
 
-.books-heading {
+.portfolio-heading {
   width: min(calc(100% - 48px), 760px);
-  margin: 0 auto 60px;
+
+  margin: 0 auto 70px;
+
   text-align: center;
 }
 
-.books-kicker {
+.portfolio-kicker {
   display: inline-block;
 
   margin-bottom: 14px;
@@ -1210,17 +1213,18 @@
   text-transform: uppercase;
 }
 
-.books-heading h2 {
+.portfolio-heading h2 {
   margin: 0;
 
   font-family: "Lora", serif;
-  font-size: clamp(2.6rem, 4vw, 4.2rem);
+  font-size: clamp(2.8rem, 4.2vw, 4.6rem);
   font-weight: 500;
   line-height: 1.05;
+
   letter-spacing: -0.04em;
 }
 
-.books-heading p {
+.portfolio-heading p {
   max-width: 650px;
 
   margin: 18px auto 0;
@@ -1232,172 +1236,173 @@
 }
 
 
-/* BOOK GRID */
+/* GRID */
 
-.books-grid {
-  width: min(calc(100% - 70px), 1380px);
+.portfolio-grid {
+  width: min(calc(100% - 80px), 1320px);
+
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
-  gap: 26px;
+  gap: 48px 32px;
 }
 
 
 /* EACH BOOK */
 
-.book-item {
+.portfolio-book {
   min-width: 0;
 }
 
-.book-art {
+.portfolio-cover {
   position: relative;
 
-  height: 390px;
+  height: 430px;
 
-  border-radius: 22px;
+  border-radius: 24px;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   overflow: hidden;
-
-  border: 1px solid rgba(0, 0, 0, 0.05);
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
 }
 
-.book-item:hover .book-art {
+.portfolio-book:hover .portfolio-cover {
   transform: translateY(-7px);
 
   box-shadow:
-    0 24px 48px rgba(30, 35, 32, 0.12);
+    0 24px 48px rgba(28, 36, 31, 0.12);
 }
 
 
-/* DIFFERENT SOFT BACKGROUNDS */
+/* BACKGROUNDS */
 
-.book-art-green {
+.scene-mint {
   background:
     radial-gradient(
-      circle at 20% 25%,
-      rgba(121, 232, 171, 0.25),
+      circle at 18% 24%,
+      rgba(121, 232, 171, 0.35),
+      transparent 38%
+    ),
+    #f5f1e8;
+}
+
+.scene-warm {
+  background:
+    radial-gradient(
+      circle at 75% 22%,
+      rgba(218, 163, 103, 0.3),
       transparent 42%
     ),
-    #f5f2ea;
+    #f5ede3;
 }
 
-.book-art-warm {
+.scene-grey {
   background:
     radial-gradient(
-      circle at 75% 20%,
-      rgba(218, 168, 112, 0.24),
+      circle at 25% 78%,
+      rgba(170, 179, 174, 0.32),
       transparent 44%
-    ),
-    #f5efe7;
-}
-
-.book-art-grey {
-  background:
-    radial-gradient(
-      circle at 22% 75%,
-      rgba(173, 179, 177, 0.24),
-      transparent 45%
-    ),
-    #f2f0ea;
-}
-
-.book-art-dark {
-  background:
-    radial-gradient(
-      circle at 72% 30%,
-      rgba(121, 232, 171, 0.13),
-      transparent 45%
     ),
     #efeee9;
 }
 
-.book-art-soft {
+.scene-dark {
   background:
     radial-gradient(
-      circle at 30% 20%,
-      rgba(221, 203, 178, 0.28),
-      transparent 46%
+      circle at 72% 27%,
+      rgba(121, 232, 171, 0.18),
+      transparent 42%
     ),
-    #f6f2ea;
+    #ecebe5;
+}
+
+.scene-soft {
+  background:
+    radial-gradient(
+      circle at 25% 20%,
+      rgba(220, 194, 158, 0.34),
+      transparent 45%
+    ),
+    #f5efe6;
 }
 
 
-/* PAPER TEXTURE */
+/* PAPER */
 
-.book-paper {
+.paper-sheet {
   position: absolute;
 
-  width: 76%;
-  height: 79%;
+  width: 78%;
+  height: 82%;
+
+  border-radius: 14px;
 
   background:
     repeating-linear-gradient(
       0deg,
-      rgba(63, 53, 43, 0.025) 0px,
-      rgba(63, 53, 43, 0.025) 1px,
+      rgba(70, 58, 45, 0.025) 0,
+      rgba(70, 58, 45, 0.025) 1px,
       transparent 1px,
-      transparent 4px
+      transparent 5px
     ),
-    #fffdf8;
-
-  border-radius: 12px;
+    #fffdf7;
 
   transform: rotate(-2deg);
 
   box-shadow:
-    0 9px 20px rgba(59, 49, 37, 0.08);
+    0 10px 25px rgba(68, 54, 38, 0.09);
 }
 
 
-/* COVER */
+/* COVER IMAGE */
 
-.book-art img {
+.portfolio-cover img {
   position: relative;
   z-index: 2;
 
-  max-width: 72%;
-  max-height: 315px;
+  width: auto;
+  max-width: 74%;
+  max-height: 350px;
 
   object-fit: contain;
 
   box-shadow:
-    0 18px 35px rgba(0, 0, 0, 0.2);
+    0 20px 38px rgba(0, 0, 0, 0.2);
 
   transition: transform 0.25s ease;
 }
 
-.book-item:hover .book-art img {
+.portfolio-book:hover .portfolio-cover img {
   transform: scale(1.025) rotate(-0.5deg);
 }
 
 
-/* BOOK INFORMATION */
+/* INFORMATION */
 
-.book-meta {
+.portfolio-meta {
   padding: 18px 4px 0;
 }
 
-.book-service {
+.portfolio-tag {
   display: inline-flex;
 
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 
   padding: 5px 11px;
 
+  border: 1px solid #9ee6ba;
+
   border-radius: 999px;
 
-  background: #e8fbef;
-  border: 1px solid #a2e8bc;
+  background: #e9fff1;
 
   color: #218d52;
 
@@ -1405,56 +1410,69 @@
   font-weight: 800;
 }
 
-.book-service.revision {
-  background: #fff5df;
-  border-color: #ecd59d;
+.portfolio-tag.revision {
+  background: #fff4db;
 
-  color: #9b6b10;
+  border-color: #ebd092;
+
+  color: #98670a;
 }
 
-.book-meta h3 {
-  margin: 0 0 5px;
+.portfolio-meta h3 {
+  margin: 0 0 6px;
 
   font-family: "Lora", serif;
-  font-size: 1rem;
-  line-height: 1.3;
+  font-size: 1.05rem;
+  line-height: 1.35;
 }
 
-.book-meta p {
+.portfolio-meta p {
   margin: 0;
 
   color: #777;
 
-  font-size: 0.82rem;
+  font-size: 0.84rem;
 }
 
 
 /* CTA */
 
-.books-footer {
-  margin-top: 54px;
+.portfolio-cta {
+  margin-top: 62px;
 
   text-align: center;
 }
 
-.books-primary-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  gap: 20px;
+/* RESPONSIVE */
 
-  padding: 16px 30px;
+@media (max-width: 1100px) {
 
-  border-radius: 999px;
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-  background: #000;
-  color: #fff;
-
-  font-size: 0.88rem;
-  font-weight: 700;
 }
 
+@media (max-width: 600px) {
+
+  .portfolio-books {
+    padding-top: 80px;
+  }
+
+  .portfolio-grid {
+    width: calc(100% - 32px);
+
+    grid-template-columns: 1fr;
+
+    gap: 42px;
+  }
+
+  .portfolio-cover {
+    height: 430px;
+  }
+
+}
 
 /* =========================
    TESTIMONIAL
@@ -1935,11 +1953,11 @@ I translate your book for readers in Spain, paying attention to
         >
       </div>
 
-<section class="books-showcase" id="books">
+<section class="portfolio-books" id="books">
 
-  <div class="books-heading">
+  <div class="portfolio-heading">
 
-    <span class="books-kicker">
+    <span class="portfolio-kicker">
       Selected work
     </span>
 
@@ -1955,163 +1973,103 @@ I translate your book for readers in Spain, paying attention to
   </div>
 
 
-  <div class="books-grid">
+  <div class="portfolio-grid">
 
-    <article class="book-item">
+    <article class="portfolio-book">
 
-      <div class="book-art book-art-green">
-
-        <div class="book-paper"></div>
+      <div class="portfolio-cover scene-mint">
+        <div class="paper-sheet"></div>
 
         <img
           src="el-arte-de-dejar-ir.webp"
           alt="El arte de dejar ir"
         >
-
       </div>
 
-      <div class="book-meta">
-
-        <span class="book-service revision">
-          Revision
-        </span>
-
-        <h3>
-          El arte de dejar ir
-        </h3>
-
-        <p>
-          Jerome Puryear, MD
-        </p>
-
+      <div class="portfolio-meta">
+        <span class="portfolio-tag revision">Revision</span>
+        <h3>El arte de dejar ir</h3>
+        <p>Jerome Puryear, MD</p>
       </div>
 
     </article>
 
 
-    <article class="book-item">
+    <article class="portfolio-book">
 
-      <div class="book-art book-art-warm">
-
-        <div class="book-paper"></div>
+      <div class="portfolio-cover scene-warm">
+        <div class="paper-sheet"></div>
 
         <img
           src="colonia-uno-marte.jpg"
           alt="Colonia Uno Marte"
         >
-
       </div>
 
-      <div class="book-meta">
-
-        <span class="book-service">
-          Translation
-        </span>
-
-        <h3>
-          Colonia Uno Marte
-        </h3>
-
-        <p>
-          Gerald M. Kilby
-        </p>
-
+      <div class="portfolio-meta">
+        <span class="portfolio-tag">Translation</span>
+        <h3>Colonia Uno Marte</h3>
+        <p>Gerald M. Kilby</p>
       </div>
 
     </article>
 
 
-    <article class="book-item">
+    <article class="portfolio-book">
 
-      <div class="book-art book-art-grey">
-
-        <div class="book-paper"></div>
+      <div class="portfolio-cover scene-grey">
+        <div class="paper-sheet"></div>
 
         <img
           src="CJNG-el-cartel-mas-peligroso-de-mexico.webp"
-          alt="CJNG: El cartel más peligroso de México"
+          alt="CJNG"
         >
-
       </div>
 
-      <div class="book-meta">
-
-        <span class="book-service revision">
-          Revision
-        </span>
-
-        <h3>
-          CJNG
-        </h3>
-
-        <p>
-          Chris Dalby
-        </p>
-
+      <div class="portfolio-meta">
+        <span class="portfolio-tag revision">Revision</span>
+        <h3>CJNG</h3>
+        <p>Chris Dalby</p>
       </div>
 
     </article>
 
 
-    <article class="book-item">
+    <article class="portfolio-book">
 
-      <div class="book-art book-art-dark">
-
-        <div class="book-paper"></div>
+      <div class="portfolio-cover scene-dark">
+        <div class="paper-sheet"></div>
 
         <img
           src="fundamentos-legales-de-una-sociedad-libre.jpg"
           alt="Fundamentos legales de una sociedad libre"
         >
-
       </div>
 
-      <div class="book-meta">
-
-        <span class="book-service">
-          Translation
-        </span>
-
-        <h3>
-          Fundamentos legales de una sociedad libre
-        </h3>
-
-        <p>
-          Stephan Kinsella
-        </p>
-
+      <div class="portfolio-meta">
+        <span class="portfolio-tag">Translation</span>
+        <h3>Fundamentos legales de una sociedad libre</h3>
+        <p>Stephan Kinsella</p>
       </div>
 
     </article>
 
 
-    <article class="book-item">
+    <article class="portfolio-book">
 
-      <div class="book-art book-art-soft">
-
-        <div class="book-paper"></div>
+      <div class="portfolio-cover scene-soft">
+        <div class="paper-sheet"></div>
 
         <img
           src="matando-de-hambre-al-lobo.jpg"
           alt="Matando de hambre al lobo"
         >
-
       </div>
 
-      <div class="book-meta">
-
-        <span class="book-service">
-          Translation
-        </span>
-
-        <h3>
-          Matando de hambre al lobo
-        </h3>
-
-        <p>
-          Karen Quiros, CHC
-        </p>
-
+      <div class="portfolio-meta">
+        <span class="portfolio-tag">Translation</span>
+        <h3>Matando de hambre al lobo</h3>
+        <p>Karen Quiros, CHC</p>
       </div>
 
     </article>
@@ -2119,7 +2077,7 @@ I translate your book for readers in Spain, paying attention to
   </div>
 
 
-  <div class="books-footer">
+  <div class="portfolio-cta">
 
     <a href="#contact" class="books-primary-btn">
       Let’s work on your book
@@ -2129,8 +2087,6 @@ I translate your book for readers in Spain, paying attention to
   </div>
 
 </section>
-
-
 
 <section class="testimonial-section">
 
