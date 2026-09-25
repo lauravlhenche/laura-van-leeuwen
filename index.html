@@ -965,14 +965,13 @@
 /* GRID */
 
 .portfolio-grid {
-  width: min(calc(100% - 80px), 1320px);
-
+  width: min(calc(100% - 80px), 1500px);
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 
-  gap: 48px 32px;
+  gap: 28px;
 }
 
 
@@ -1267,45 +1266,29 @@
 /* RESPONSIVE */
 
 @media (max-width: 1200px) {
-
-  .books-grid {
-    grid-template-columns: repeat(3, 1fr);
+  .portfolio-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-
 }
 
 @media (max-width: 760px) {
-
-  .books-grid {
-    width: calc(100% - 36px);
-
-    grid-template-columns: repeat(2, 1fr);
+  .portfolio-grid {
+    width: calc(100% - 28px);
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
-  .book-art {
-    height: 360px;
+  .portfolio-cover {
+    height: 380px;
   }
-
 }
 
 @media (max-width: 520px) {
-
-  .books-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .book-art {
-    height: 410px;
-  }
-
   .testimonial-card {
     width: calc(100% - 28px);
-
     grid-template-columns: 1fr;
-
     text-align: left;
   }
-
 }
     
   </style>
@@ -1680,7 +1663,6 @@ I translate your book for readers in Spain, paying attention to
 
     <p>
       A small selection of books I’ve translated or revised over the years.
-      These are just a few examples from a broader range of projects.
     </p>
 
   </div>
