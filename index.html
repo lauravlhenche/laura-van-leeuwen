@@ -1011,6 +1011,247 @@
     }
 
 /* =========================
+   ABOUT — LITERARY
+========================== */
+
+.about-literary {
+  position: relative;
+
+  padding: 105px 0;
+
+  background: #fff;
+}
+
+.about-literary-inner {
+  width: min(calc(100% - 80px), 1180px);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 90px;
+
+  align-items: center;
+}
+
+
+/* PHOTO */
+
+.about-literary-image {
+  position: relative;
+
+  max-width: 410px;
+
+  justify-self: end;
+}
+
+.about-literary-image::before {
+  content: "";
+
+  position: absolute;
+
+  top: 22px;
+  left: -22px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 4px;
+
+  background: #e8f9ef;
+
+  z-index: 0;
+}
+
+.about-literary-image::after {
+  content: "";
+
+  position: absolute;
+
+  right: -28px;
+  bottom: -24px;
+
+  width: 92px;
+  height: 92px;
+
+  border: 1px solid rgba(40, 185, 116, 0.35);
+
+  border-radius: 50%;
+
+  z-index: 0;
+}
+
+.about-literary-image img {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 22px 45px rgba(26, 36, 31, 0.12);
+}
+
+
+/* TEXT */
+
+.about-literary-copy {
+  max-width: 650px;
+}
+
+.about-literary-kicker {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.about-literary-copy h2 {
+  margin: 0 0 28px;
+
+  font-family: "Lora", serif;
+  font-size: clamp(2.5rem, 3.7vw, 4rem);
+  font-weight: 500;
+
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.about-literary-copy h2 em {
+  color: var(--green-dark);
+
+  font-weight: 400;
+}
+
+.about-literary-copy p {
+  max-width: 610px;
+
+  margin: 0 0 18px;
+
+  font-family: "Lora", serif;
+  font-size: 1rem;
+
+  line-height: 1.75;
+
+  color: #555;
+}
+
+.about-literary-copy .about-literary-lead {
+  color: var(--text);
+
+  font-size: 1.08rem;
+}
+
+
+/* SMALL CREDENTIALS */
+
+.about-literary-details {
+  margin-top: 30px;
+  padding-top: 20px;
+
+  border-top: 1px solid var(--line);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px 24px;
+}
+
+.about-literary-details span {
+  position: relative;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  color: #444;
+}
+
+.about-literary-details span:not(:last-child)::after {
+  content: "·";
+
+  position: absolute;
+
+  right: -15px;
+
+  color: var(--green-dark);
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+  .about-literary-inner {
+    grid-template-columns: 1fr;
+
+    gap: 52px;
+  }
+
+  .about-literary-image {
+    width: min(100%, 390px);
+
+    justify-self: center;
+  }
+
+  .about-literary-copy {
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  .about-literary-details {
+    justify-content: center;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+
+  .about-literary {
+    padding: 78px 0;
+  }
+
+  .about-literary-inner {
+    width: calc(100% - 36px);
+  }
+
+  .about-literary-copy h2 br {
+    display: none;
+  }
+
+  .about-literary-copy p {
+    font-size: 0.96rem;
+  }
+
+  .about-literary-details {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .about-literary-details span::after {
+    display: none;
+  }
+
+}
+    
+/* =========================
    OPEN BOOK PORTFOLIO
 ========================== */
 
@@ -1773,6 +2014,55 @@ I translate your book for readers in Spain, paying attention to
 
     </main>
 
+<section class="about-literary" id="about">
+
+  <div class="about-literary-inner">
+
+    <div class="about-literary-image">
+      <img
+       src="laura-profile.webp"
+        alt="Laura van Leeuwen, literary translator"
+      >
+    </div>
+
+    <div class="about-literary-copy">
+
+      <span class="about-literary-kicker">
+        About
+      </span>
+
+      <h2>
+        A translator, a reader,<br>
+        <em>a bridge between worlds.</em>
+      </h2>
+
+      <p class="about-literary-lead">
+        I’m a literary translator based in Spain, with a background in
+        philology and literature. I work with authors and publishers who
+        want their Spanish edition to feel written for Spanish readers —
+        not like a translation sitting on top of the original.
+      </p>
+
+      <p>
+        Every book has its own rhythm, voice and small details that make it
+        recognisable. My job is to carry those across into European Spanish
+        without sanding away what made the story yours in the first place.
+      </p>
+
+      <div class="about-literary-details">
+
+        <span>BA in Philology</span>
+        <span>MA in Literature Didactics</span>
+        <span>English → European Spanish</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+    
 <section class="portfolio-books" id="books">
 
   <div class="portfolio-heading">
