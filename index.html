@@ -539,40 +539,110 @@
       text-transform: uppercase;
     }
 
+/* =========================
+   BEYOND THE WORDS
+========================== */
+
 .benefits-transition {
   position: relative;
 
-  min-height: 360px;
+  margin-top: 20px;
+  padding: 78px 0 135px;
 
-  margin-top: 40px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: #fff;
+  background: var(--cream);
 
   overflow: hidden;
 }
 
-/* zona crema curvada */
+/* detalle muy suave en el fondo */
 
 .benefits-transition::before {
   content: "";
 
   position: absolute;
+  inset: 0;
 
-  top: 0;
-  left: -5%;
-  width: 110%;
-  height: 58%;
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(121, 232, 171, 0.09),
+      transparent 42%
+    );
 
-  background: var(--cream);
-
-  border-radius: 0 0 50% 50% / 0 0 26% 26%;
+  pointer-events: none;
 }
 
-/* tarjetas */
+/* transición curva hacia el fondo blanco del portfolio */
+
+.benefits-transition::after {
+  content: "";
+
+  position: absolute;
+
+  left: -5%;
+  bottom: -62px;
+
+  width: 110%;
+  height: 125px;
+
+  background: #fff;
+
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+
+/* ENCABEZADO */
+
+.benefits-intro {
+  position: relative;
+  z-index: 2;
+
+  width: min(calc(100% - 48px), 700px);
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+.benefits-kicker {
+  display: inline-block;
+
+  margin-bottom: 13px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.benefits-intro h2 {
+  margin: 0;
+
+  font-family: "Lora", serif;
+  font-size: clamp(2.2rem, 3.4vw, 3.5rem);
+  font-weight: 500;
+
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.benefits-intro p {
+  max-width: 570px;
+
+  margin: 15px auto 0;
+
+  font-family: "Lora", serif;
+  font-size: 0.98rem;
+
+  line-height: 1.65;
+
+  color: #626262;
+}
+
+
+/* TARJETAS */
 
 .benefits-cards {
   position: relative;
@@ -580,91 +650,106 @@
 
   width: min(calc(100% - 80px), 1240px);
 
+  margin: 0 auto;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
   gap: 22px;
-
-  margin-top: 10px;
 }
 
 .benefit-card {
   position: relative;
 
-  min-height: 210px;
-  padding: 30px 26px;
+  min-height: 230px;
 
-  background: #fff;
+  padding: 27px 25px 29px;
 
-  border: 1px solid rgba(121, 232, 171, 0.45);
-  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+
+  border: 1px solid rgba(13, 17, 23, 0.08);
+  border-radius: 20px;
 
   box-shadow:
-    0 14px 30px rgba(24, 35, 29, 0.08),
-    0 2px 8px rgba(24, 35, 29, 0.04);
+    0 12px 32px rgba(25, 34, 29, 0.055);
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 
-  overflow: hidden;
-
   transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-    .benefit-card::before {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-
-  height: 4px;
-
-  background: var(--green);
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
 }
 
 .benefit-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+
+  border-color: rgba(40, 185, 116, 0.26);
 
   box-shadow:
-    0 22px 42px rgba(24, 35, 29, 0.12),
-    0 4px 12px rgba(24, 35, 29, 0.05);
+    0 20px 42px rgba(25, 34, 29, 0.09);
 }
 
+
+/* 01 / 02 / 03 / 04 */
+
+.benefit-number {
+  position: absolute;
+
+  top: 22px;
+  right: 23px;
+
+  font-family: "Lora", serif;
+  font-size: 0.78rem;
+  font-style: italic;
+
+  letter-spacing: 0.08em;
+
+  color: var(--green-dark);
+}
+
+
+/* ICONO */
+
 .benefit-card-icon {
-  width: 54px;
-  height: 54px;
+  width: 48px;
+  height: 48px;
 
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 
-  border-radius: 15px;
+  border-radius: 14px;
 
-  background: #e2faec;
-  border: 1px solid rgba(121, 232, 171, 0.55);
+  background: #eefbf4;
+  border: 1px solid rgba(121, 232, 171, 0.48);
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  color: #151515;
+  color: #1b2a22;
 }
 
 .benefit-card-icon svg {
-  width: 27px;
-  height: 27px;
+  width: 24px;
+  height: 24px;
 
   display: block;
 }
 
+
+/* TEXTO */
+
 .benefit-card h3 {
-  margin: 0 0 10px;
+  margin: 0 0 9px;
 
   font-family: "Lora", serif;
-  font-size: 1.05rem;
-  line-height: 1.25;
+
+  font-size: 1.08rem;
+  font-weight: 500;
+
+  line-height: 1.3;
 
   color: var(--text);
 }
@@ -673,39 +758,53 @@
   margin: 0;
 
   font-family: "Lora", serif;
+
   font-size: 0.9rem;
-  line-height: 1.55;
+  line-height: 1.65;
 
   color: #626262;
 }
-    
-@media (max-width: 780px) {
-  .expect-grid {
+
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .benefits-cards {
+    width: calc(100% - 48px);
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+
+  .benefits-transition {
+    padding: 64px 0 115px;
+  }
+
+  .benefits-intro {
     width: calc(100% - 36px);
+
+    margin-bottom: 38px;
+  }
+
+  .benefits-cards {
+    width: calc(100% - 32px);
+
     grid-template-columns: 1fr;
-    gap: 24px;
+
+    gap: 16px;
   }
 
-  .expect-item:nth-child(even) {
-    border-left: 0;
-    padding-left: 0;
+  .benefit-card {
+    min-height: auto;
   }
 
-  .expect-item {
-    grid-template-columns: 62px 1fr;
-    gap: 18px;
-  }
-
-  .expect-icon {
-    width: 58px;
-    height: 58px;
-    border-radius: 16px;
-  }
-
-  .expect-icon svg {
-    width: 30px;
-    height: 30px;
-  }
 }
 
     /* =========================
@@ -1498,10 +1597,28 @@ I translate your book for readers in Spain, paying attention to
 
 <section class="benefits-transition">
 
+<div class="benefits-intro">
+
+  <span class="benefits-kicker">
+    Beyond the words
+  </span>
+
+  <h2>
+    More than just a translation
+  </h2>
+
+  <p>
+    Voice, rhythm, consistency and care from the first page to the last.
+  </p>
+
+</div>
+  
   <div class="benefits-cards">
 
     <article class="benefit-card">
 
+      <span class="benefit-number">01</span>
+      
       <div class="benefit-card-icon">
         <svg viewBox="0 0 48 48" aria-hidden="true">
           <path
@@ -1532,6 +1649,8 @@ I translate your book for readers in Spain, paying attention to
     </article>
 
         <article class="benefit-card">
+
+        <span class="benefit-number">02</span>
 
       <div class="benefit-card-icon">
         <svg viewBox="0 0 48 48" aria-hidden="true">
@@ -1571,6 +1690,8 @@ I translate your book for readers in Spain, paying attention to
 
     <article class="benefit-card">
 
+       <span class="benefit-number">03</span>
+
       <div class="benefit-card-icon">
         <svg viewBox="0 0 48 48" aria-hidden="true">
           <path
@@ -1594,6 +1715,8 @@ I translate your book for readers in Spain, paying attention to
     </article>
 
     <article class="benefit-card">
+
+          <span class="benefit-number">04</span>
 
       <div class="benefit-card-icon">
         <svg viewBox="0 0 48 48" aria-hidden="true">
