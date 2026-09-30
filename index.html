@@ -1196,19 +1196,16 @@
 
   .about-literary-inner {
     grid-template-columns: 1fr;
-
     gap: 52px;
   }
 
   .about-literary-image {
     width: min(100%, 390px);
-
     justify-self: center;
   }
 
   .about-literary-copy {
     margin: 0 auto;
-
     text-align: center;
   }
 
@@ -1218,6 +1215,11 @@
 
 }
 
+    @media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 /* MOBILE */
 
@@ -1249,6 +1251,14 @@
     display: none;
   }
 
+}
+    
+@media (max-width: 760px) {
+  .portfolio-grid {
+    width: calc(100% - 28px);
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
     
 /* =========================
@@ -1306,13 +1316,13 @@ letter-spacing: -0.03em;
 /* GRID */
 
 .portfolio-grid {
-  width: min(calc(100% - 80px), 1500px);
+  width: min(calc(100% - 80px), 1320px);
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 
-  gap: 28px;
+  gap: 42px 32px;
 }
 
 
