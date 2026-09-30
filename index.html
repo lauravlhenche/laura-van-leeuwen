@@ -1563,65 +1563,109 @@ letter-spacing: -0.03em;
    TESTIMONIAL
 ========================== */
 
-.testimonial-section {
-  background: var(--green);
+    /* =========================
+   EDITORIAL TESTIMONIAL
+========================== */
 
-  padding: 32px 0 60px;
+.testimonial-editorial {
+  padding: 92px 0 96px;
+
+  background: #fbf8f1;
 }
 
-.testimonial-card {
-  width: min(calc(100% - 48px), 980px);
+.testimonial-editorial-inner {
+  position: relative;
+
+  width: min(calc(100% - 48px), 920px);
 
   margin: 0 auto;
 
-  padding: 30px 38px;
+  padding: 18px 0 0;
 
-  background: var(--cream);
-
-  border-radius: 20px;
-
-  display: grid;
-  grid-template-columns: 76px 1fr;
-  gap: 26px;
-
-  align-items: center;
-
-  box-shadow:
-    0 16px 40px rgba(32, 48, 39, 0.08);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.testimonial-photo {
-  width: 76px;
-  height: 76px;
+.testimonial-mark {
+  margin-bottom: 10px;
+
+  font-family: "Lora", serif;
+  font-size: 5rem;
+  line-height: 0.8;
+
+  color: rgba(58, 191, 120, 0.24);
+}
+
+.testimonial-editorial blockquote {
+  max-width: 860px;
+
+  margin: 0;
+
+  font-family: "Lora", serif;
+  font-size: clamp(1.15rem, 1.7vw, 1.35rem);
+  font-weight: 400;
+
+  line-height: 1.75;
+
+  color: #2a2a2a;
+}
+
+.testimonial-author-row {
+  margin-top: 30px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.testimonial-author-photo {
+  width: 48px;
+  height: 48px;
 
   border-radius: 50%;
 
   object-fit: cover;
-  object-position: center 24%;
+  object-position: center 22%;
 }
 
-.testimonial-content blockquote {
-  margin: 0 0 14px;
+.testimonial-author-copy {
+  display: flex;
+  flex-direction: column;
 
-  font-family: "Lora", serif;
-  font-size: 1rem;
-  line-height: 1.6;
-
-  color: #282828;
+  gap: 2px;
 }
 
-.testimonial-author {
-  margin: 0;
-
+.testimonial-author-copy strong {
+  font-family: "DM Sans", sans-serif;
   font-size: 0.82rem;
   font-weight: 800;
 }
 
-.testimonial-author span {
-  color: var(--muted);
-  font-weight: 500;
+.testimonial-author-copy span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.76rem;
+
+  color: #777;
 }
 
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+
+  .testimonial-editorial {
+    padding: 70px 0 74px;
+  }
+
+  .testimonial-editorial-inner {
+    width: calc(100% - 36px);
+  }
+
+  .testimonial-editorial blockquote {
+    font-size: 1.08rem;
+  }
+
+}
 
 /* RESPONSIVE */
 
@@ -2487,30 +2531,30 @@ not just as a reflection of the English original.
 
 </section>
 
-<section class="testimonial-section">
+    <section class="testimonial-editorial">
 
-  <div class="testimonial-card">
+  <div class="testimonial-editorial-inner">
 
-    <img
-      src="karen-quiros.jpg"
-      alt="Karen Quiros"
-      class="testimonial-photo"
-    >
+    <div class="testimonial-mark" aria-hidden="true">
+      “
+    </div>
 
-    <div class="testimonial-content">
+    <blockquote>
+      I had the pleasure of hiring Laura to translate my book, and I couldn’t be more satisfied with her work. She was exceptionally professional and dedicated, ensuring I was 100% happy with the final product. Laura translated the book into European Spanish with remarkable accuracy and attention to detail.
+    </blockquote>
 
-      <blockquote>
-        “I had the pleasure of hiring Laura to translate my book,
-        and I couldn’t be more satisfied with her work. She was
-        exceptionally professional and dedicated, ensuring I was
-        100% happy with the final product. Laura translated the book
-        into European Spanish with remarkable accuracy and attention
-        to detail.”
-      </blockquote>
+    <div class="testimonial-author-row">
 
-      <p class="testimonial-author">
-        Karen Quiros, <span>author</span>
-      </p>
+      <img
+        src="karen-quiros.jpg"
+        alt="Karen Quiros"
+        class="testimonial-author-photo"
+      >
+
+      <div class="testimonial-author-copy">
+        <strong>Karen Quiros</strong>
+        <span>Author</span>
+      </div>
 
     </div>
 
