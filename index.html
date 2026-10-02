@@ -1860,26 +1860,34 @@ letter-spacing: -0.03em;
   color: #606060;
 }
 
-    .process-list {
-  margin: 24px 0 0;
-  padding: 20px 0 0;
+.process-list {
+  margin: 26px 0 0;
+  padding: 0;
 
   list-style: none;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: grid;
+  gap: 12px;
+
+  border-top: none;
 }
 
 .process-list li {
   position: relative;
 
-  margin: 0 0 10px;
-  padding-left: 18px;
+  margin: 0;
+  padding: 14px 16px 14px 42px;
 
   font-family: "DM Sans", sans-serif;
-  font-size: 0.78rem;
-  line-height: 1.5;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: #4f4a45;
 
-  color: #555;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
 }
 
 .process-list li:last-child {
@@ -1890,16 +1898,30 @@ letter-spacing: -0.03em;
   content: "";
 
   position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 
-  left: 0;
-  top: 0.65em;
-
-  width: 6px;
-  height: 6px;
-
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 
-  background: var(--green-dark);
+  background: #63c28c;
+  box-shadow: 0 0 0 4px rgba(99, 194, 140, 0.16);
+}
+
+.process-list li::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background: linear-gradient(135deg, rgba(0,0,0,0.04) 0%, rgba(0,0,0,0.04) 50%, transparent 50%, transparent 100%);
+  border-top-right-radius: 14px;
 }
 
 /* =========================
@@ -2673,9 +2695,9 @@ not just as a reflection of the English original.
       </p>
 
       <ul class="process-list">
-  <li>Scope, word count & genre</li>
-  <li>Timeline and delivery date</li>
-  <li>Style notes or reference material</li>
+  <li>Your book’s length, genre, and what the project will involve</li>
+  <li>The timeline and agreed delivery date</li>
+  <li>Any style notes or reference material you’d like me to keep in mind</li>
 </ul>
 
     </article>
@@ -2694,9 +2716,9 @@ not just as a reflection of the English original.
       </p>
 
       <ul class="process-list">
-  <li>European Spanish translation</li>
-  <li>Questions flagged when needed</li>
-  <li>Voice, terminology & character consistency</li>
+  <li>Your manuscript translated into European Spanish</li>
+  <li>Questions sent your way whenever your input matters</li>
+  <li>Character voices, tone, and recurring details</li>
 </ul>
 
     </article>
@@ -2715,9 +2737,9 @@ not just as a reflection of the English original.
       </p>
 
       <ul class="process-list">
-  <li>Full-book read-through</li>
-  <li>Consistency, flow & terminology check</li>
-  <li>Final Spanish manuscript delivered</li>
+  <li>A complete read-through of the Spanish manuscript</li>
+  <li>A final check of flow, consistency, and every thread running through the book</li>
+  <li>Your finished Spanish manuscript, ready for the next stage</li>
 </ul>
 
     </article>
