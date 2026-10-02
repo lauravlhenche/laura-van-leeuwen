@@ -1624,12 +1624,17 @@ letter-spacing: -0.03em;
 /* author */
 
 .testimonial-author-row {
-  margin-top: 30px;
+  margin-top: 32px;
 
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
+  justify-content: flex-start;
 
   gap: 14px;
+
+  width: fit-content;
+  margin-left: auto;
 }
 
 .testimonial-author-photo {
@@ -1641,15 +1646,17 @@ letter-spacing: -0.03em;
   object-fit: cover;
   object-position: center 22%;
 
-  box-shadow:
-    0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
 }
 
 .testimonial-author-copy {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 
   gap: 2px;
+
+  text-align: right;
 }
 
 .testimonial-author-copy strong {
@@ -2621,7 +2628,7 @@ not just as a reflection of the English original.
       </h3>
 
       <p>
-        I’ll review the book, scope and timeline so we can define the project clearly from the start.
+        I’ll review the book and confirm what the project involves, how long it will take, and what I need from you before I begin.
       </p>
 
     </article>
@@ -2636,7 +2643,7 @@ not just as a reflection of the English original.
       </h3>
 
       <p>
-        I’ll keep you updated throughout the project and flag anything that needs your input.
+        As I work, I’ll keep you posted and get in touch whenever a passage calls for your input.
       </p>
 
     </article>
@@ -2647,11 +2654,11 @@ not just as a reflection of the English original.
       <span class="process-number">03</span>
 
       <h3>
-        Final review & delivery
+        Final read-through & delivery
       </h3>
 
       <p>
-        The Spanish edition is checked for consistency, tone and flow before final delivery.
+        Once the translation is complete, I’ll read it through as a book—not just page by page—before sending you the finished Spanish manuscript.
       </p>
 
     </article>
