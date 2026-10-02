@@ -1272,10 +1272,8 @@
 }
 
 .portfolio-heading {
-  width: min(calc(100% - 48px), 760px);
-
+  width: min(calc(100% - 48px), 1200px);
   margin: 0 auto 70px;
-
   text-align: center;
 }
 
@@ -1298,6 +1296,8 @@
   font-weight: 500;
 line-height: 1.08;
 letter-spacing: -0.03em;
+
+  white-space: nowrap;
 }
 
 .portfolio-heading p {
@@ -1681,6 +1681,10 @@ letter-spacing: -0.03em;
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
+  .portfolio-heading h2 {
+  white-space: normal;
+}
 
   .portfolio-cover {
     height: 380px;
