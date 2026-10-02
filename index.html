@@ -1860,6 +1860,47 @@ letter-spacing: -0.03em;
   color: #606060;
 }
 
+    .process-list {
+  margin: 24px 0 0;
+  padding: 20px 0 0;
+
+  list-style: none;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.process-list li {
+  position: relative;
+
+  margin: 0 0 10px;
+  padding-left: 18px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.5;
+
+  color: #555;
+}
+
+.process-list li:last-child {
+  margin-bottom: 0;
+}
+
+.process-list li::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0.65em;
+
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--green-dark);
+}
 
 /* =========================
    FINAL CTA
@@ -2631,6 +2672,12 @@ not just as a reflection of the English original.
         I’ll review the book and confirm what the project involves, how long it will take, and what I need from you before I begin.
       </p>
 
+      <ul class="process-list">
+  <li>Scope, word count & genre</li>
+  <li>Timeline and delivery date</li>
+  <li>Style notes or reference material</li>
+</ul>
+
     </article>
 
 
@@ -2646,6 +2693,12 @@ not just as a reflection of the English original.
         As I work, I’ll keep you posted and get in touch whenever a passage calls for your input.
       </p>
 
+      <ul class="process-list">
+  <li>European Spanish translation</li>
+  <li>Questions flagged when needed</li>
+  <li>Voice, terminology & character consistency</li>
+</ul>
+
     </article>
 
 
@@ -2660,6 +2713,12 @@ not just as a reflection of the English original.
       <p>
         Once the translation is complete, I’ll read it through as a book—not just page by page—before sending you the finished Spanish manuscript.
       </p>
+
+      <ul class="process-list">
+  <li>Full-book read-through</li>
+  <li>Consistency, flow & terminology check</li>
+  <li>Final Spanish manuscript delivered</li>
+</ul>
 
     </article>
 
