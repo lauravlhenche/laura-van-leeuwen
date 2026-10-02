@@ -1568,46 +1568,60 @@ letter-spacing: -0.03em;
 ========================== */
 
 .testimonial-editorial {
-  padding: 92px 0 96px;
+  padding: 90px 0 96px;
 
-  background: #fbf8f1;
+  background: #f8f3ea;
 }
 
 .testimonial-editorial-inner {
   position: relative;
 
-  width: min(calc(100% - 48px), 920px);
+  width: min(calc(100% - 48px), 860px);
 
   margin: 0 auto;
 
-  padding: 18px 0 0;
+  padding: 54px 58px 48px;
 
-  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(255, 253, 248, 0.88);
+
+  border-radius: 22px;
+
+  box-shadow:
+    0 18px 50px rgba(58, 46, 35, 0.07);
+
+  border: 1px solid rgba(78, 60, 43, 0.07);
 }
+
+
+/* decorative quotation mark */
 
 .testimonial-mark {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
 
   font-family: "Lora", serif;
-  font-size: 5rem;
-  line-height: 0.8;
+  font-size: 5.2rem;
+  line-height: 0.65;
 
-  color: rgba(58, 191, 120, 0.24);
+  color: rgba(89, 206, 146, 0.3);
 }
 
-.testimonial-editorial blockquote {
-  max-width: 860px;
 
+/* quote */
+
+.testimonial-editorial blockquote {
   margin: 0;
 
   font-family: "Lora", serif;
-  font-size: clamp(1.15rem, 1.7vw, 1.35rem);
+  font-size: clamp(1.12rem, 1.55vw, 1.3rem);
   font-weight: 400;
 
   line-height: 1.75;
 
-  color: #2a2a2a;
+  color: #27231f;
 }
+
+
+/* author */
 
 .testimonial-author-row {
   margin-top: 30px;
@@ -1619,13 +1633,16 @@ letter-spacing: -0.03em;
 }
 
 .testimonial-author-photo {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
 
   border-radius: 50%;
 
   object-fit: cover;
   object-position: center 22%;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .testimonial-author-copy {
@@ -1645,7 +1662,7 @@ letter-spacing: -0.03em;
   font-family: "DM Sans", sans-serif;
   font-size: 0.76rem;
 
-  color: #777;
+  color: #7b746e;
 }
 
 
@@ -1654,15 +1671,17 @@ letter-spacing: -0.03em;
 @media (max-width: 560px) {
 
   .testimonial-editorial {
-    padding: 70px 0 74px;
+    padding: 64px 0 70px;
   }
 
   .testimonial-editorial-inner {
-    width: calc(100% - 36px);
+    width: calc(100% - 30px);
+
+    padding: 42px 28px 36px;
   }
 
   .testimonial-editorial blockquote {
-    font-size: 1.08rem;
+    font-size: 1.04rem;
   }
 
 }
