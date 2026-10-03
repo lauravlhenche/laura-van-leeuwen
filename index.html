@@ -2105,6 +2105,238 @@ margin: 0 auto;
   }
 
 }
+
+    /* =========================
+   FOOTER
+========================== */
+
+.site-footer {
+  background: var(--green);
+  color: var(--text);
+
+  padding: 76px 0 28px;
+}
+
+.site-footer-inner {
+  width: min(calc(100% - 48px), 1180px);
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 70px;
+
+  align-items: start;
+
+  padding-bottom: 48px;
+}
+
+.footer-brand {
+  max-width: 610px;
+}
+
+.footer-brand-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-mark {
+  width: 20px;
+  height: 42px;
+
+  flex: 0 0 auto;
+
+  border-radius: 0 999px 999px 0;
+
+  background: #000;
+}
+
+.footer-name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.45rem;
+  font-weight: 800;
+
+  letter-spacing: -0.04em;
+}
+
+.footer-role {
+  margin-top: 3px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+.footer-tagline {
+  margin: 30px 0 12px;
+
+  font-family: "Lora", serif;
+  font-size: 1.3rem;
+  font-style: italic;
+
+  line-height: 1.4;
+}
+
+.footer-description {
+  max-width: 540px;
+
+  margin: 0 0 14px;
+
+  font-family: "Lora", serif;
+  font-size: 0.94rem;
+
+  line-height: 1.65;
+
+  color: rgba(13, 17, 23, 0.76);
+}
+
+.footer-location {
+  margin: 0 0 7px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.78rem;
+
+  color: rgba(13, 17, 23, 0.7);
+}
+
+.footer-email {
+  display: inline-block;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+
+  padding-top: 9px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-nav a {
+  position: relative;
+
+  padding-bottom: 4px;
+}
+
+.footer-nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 100%;
+  bottom: 0;
+
+  height: 1px;
+
+  background: #000;
+
+  transition: right 0.2s ease;
+}
+
+.footer-nav a:hover::after {
+  right: 0;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+
+  border-top: 1px solid rgba(13, 17, 23, 0.18);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 32px;
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 22px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.footer-copyright {
+  margin: 0;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+
+  color: rgba(13, 17, 23, 0.64);
+
+  text-align: right;
+}
+
+
+/* TABLET */
+
+@media (max-width: 800px) {
+
+  .footer-top {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+  }
+
+  .footer-nav {
+    padding-top: 0;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .footer-copyright {
+    text-align: left;
+  }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 560px) {
+
+  .site-footer {
+    padding: 58px 0 24px;
+  }
+
+  .site-footer-inner {
+    width: calc(100% - 36px);
+  }
+
+  .footer-nav {
+    flex-wrap: wrap;
+
+    gap: 18px 24px;
+  }
+
+  .footer-legal {
+    gap: 14px 20px;
+  }
+
+}
     
   </style>
 </head>
@@ -2829,6 +3061,79 @@ not just as a reflection of the English original.
 </section>
     
   </div>
+
+  <footer class="site-footer">
+
+  <div class="site-footer-inner">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        <div class="footer-brand-line">
+          <span class="footer-mark"></span>
+
+          <div>
+            <div class="footer-name">Laura.</div>
+            <div class="footer-role">
+              Literary Translator<br>
+              EN → ES
+            </div>
+          </div>
+        </div>
+
+        <p class="footer-tagline">
+          Stories deserve to travel well.
+        </p>
+
+        <p class="footer-description">
+          Literary translation, revision and proofreading for authors,
+          publishers and literary agencies.
+        </p>
+
+        <p class="footer-location">
+          Based in Spain · Working worldwide
+        </p>
+
+        <a
+          class="footer-email"
+          href="mailto:YOUR-EMAIL-HERE"
+        >
+         YOUR-EMAIL-HERE
+        </a>
+
+      </div>
+
+
+      <nav class="footer-nav">
+
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#books">Books</a>
+        <a href="#contact">Contact</a>
+
+      </nav>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <div class="footer-legal">
+        <a href="privacy-policy/">Privacy Policy</a>
+        <a href="terms/">Terms of Service</a>
+        <a href="legal-notice/">Legal Notice</a>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 Laura van Leeuwen · Literary Translator EN → ES
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
 </html>
