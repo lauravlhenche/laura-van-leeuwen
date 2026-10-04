@@ -1886,22 +1886,6 @@ margin: 0 auto;
   box-shadow: 0 8px 20px rgba(60, 48, 36, 0.045);
 }
 
-.process-list li::before {
-  content: "";
-
-  position: absolute;
-
-  left: 0;
-  top: 14px;
-  bottom: 14px;
-
-  width: 3px;
-
-  border-radius: 3px;
-
-  background: #79e8ab;
-}
-
 .process-list li::after {
   display: none;
 }
@@ -1926,20 +1910,15 @@ margin: 0 auto;
 
   position: absolute;
 
-  top: -9px;
-  left: 50%;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
 
-  width: 54px;
-  height: 18px;
+  width: 3px;
 
-  transform: translateX(-50%) rotate(-2deg);
+  border-radius: 3px;
 
-  background: rgba(204, 190, 159, 0.48);
-
-  border-radius: 2px;
-
-  box-shadow:
-    0 2px 3px rgba(0, 0, 0, 0.05);
+  background: #79e8ab;
 }
 
 /* esquina doblada */
@@ -3071,9 +3050,20 @@ not just as a reflection of the English original.
       </p>
 
       <ul class="process-list">
-  <li>Your manuscript translated into European Spanish</li>
-  <li>Questions sent your way whenever your input matters</li>
-  <li>Character voices, tone, and recurring details</li>
+ <li>
+    <span class="process-note-label">Translation</span>
+    Your manuscript translated into European Spanish
+  </li>
+
+  <li>
+    <span class="process-note-label">Questions</span>
+    Questions sent your way whenever your input matters
+  </li>
+
+  <li>
+    <span class="process-note-label">Consistency</span>
+    Character voices, tone, and recurring details
+  </li>
 </ul>
 
     </article>
@@ -3091,10 +3081,23 @@ not just as a reflection of the English original.
         Once the translation is complete, I’ll read it through as a book before sending you the finished Spanish manuscript.
       </p>
 
-      <ul class="process-list">
-  <li>A complete read-through of the Spanish manuscript</li>
-  <li>A final check of flow, consistency, and every thread running through the book</li>
-  <li>Your finished Spanish manuscript, ready for the next stage</li>
+<ul class="process-list">
+
+  <li>
+    <span class="process-note-label">Read-through</span>
+    A complete read-through of the Spanish manuscript
+  </li>
+
+  <li>
+    <span class="process-note-label">Final check</span>
+    A final check of flow, consistency, and every thread running through the book
+  </li>
+
+  <li>
+    <span class="process-note-label">Delivery</span>
+    Your finished Spanish manuscript, ready for the next stage
+  </li>
+
 </ul>
 
     </article>
