@@ -2361,6 +2361,37 @@ gap: 20px;
   align-items: center;
   justify-content: center;
 }
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (min-width: 1600px) {
+
+  .header-inner,
+  .hero,
+  .benefits-inner,
+  .portfolio-grid,
+  .process-grid,
+  .site-footer-inner {
+    max-width: 1500px;
+  }
+
+  .hero-title,
+  .hero h1 {
+    font-size: clamp(3.8rem, 4vw, 5.4rem);
+  }
+
+  .hero-description {
+    font-size: 1.08rem;
+  }
+
+  .benefits-inner,
+  .process-grid {
+    gap: 36px;
+  }
+
+}
     
   </style>
 </head>
