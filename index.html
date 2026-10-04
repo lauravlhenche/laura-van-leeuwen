@@ -430,16 +430,16 @@
 
       padding: 18px 24px;
 
-      border: 1px solid #dbe2eb;
+      border: 1px solid rgba(92, 78, 62, 0.12);
       border-radius: 24px;
 
-      background: #fff;
+     background: #fffdfa;
 
       display: flex;
       align-items: center;
       gap: 22px;
 
-      box-shadow: 0 14px 30px rgba(39, 43, 51, 0.04);
+      box-shadow: 0 14px 34px rgba(70, 55, 40, 0.06);
     }
 
     .profile-photo {
@@ -486,24 +486,22 @@
       font-weight: 500;
     }
 
-    .availability {
-      width: fit-content;
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
 
-      display: flex;
-      align-items: center;
-      gap: 8px;
+  padding: 5px 10px;
 
-      padding: 4px 12px;
+  border: 1px solid rgba(74, 176, 120, 0.24);
+  border-radius: 999px;
 
-      border: 1px solid #99e5b9;
-      border-radius: 999px;
+  background: #f3fbf6;
+  color: #2c8b5c;
 
-      background: #eafff2;
-      color: #21884f;
-
-      font-size: 0.84rem;
-      font-weight: 700;
-    }
+  font-size: 0.72rem;
+  font-weight: 700;
+}
 
     .availability-dot {
       width: 9px;
@@ -1859,7 +1857,7 @@ margin: 0 auto;
 }
 
 .process-list {
-  margin: 28px 0 0;
+  margin: 30px 0 0;
   padding: 0;
 
   list-style: none;
@@ -1872,25 +1870,20 @@ margin: 0 auto;
   position: relative;
 
   margin: 0;
-  padding: 20px 22px 20px 26px;
+  padding: 18px 20px 18px 24px;
 
   font-family: "DM Sans", sans-serif;
-  font-size: 0.82rem;
-  line-height: 1.5;
+  font-size: 0.8rem;
+  line-height: 1.55;
 
-  color: #4b4640;
+  color: #4c463f;
 
-  background: #fbf7ee;
+  background: #fbf7ef;
 
-  border: 1px solid rgba(80, 65, 50, 0.08);
-  border-radius: 10px;
+  border: 1px solid rgba(86, 70, 54, 0.08);
+  border-radius: 8px;
 
-  box-shadow:
-    0 8px 22px rgba(55, 45, 35, 0.055);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(60, 48, 36, 0.045);
 }
 
 .process-list li::before {
@@ -1899,20 +1892,20 @@ margin: 0 auto;
   position: absolute;
 
   left: 0;
-  top: 16px;
-  bottom: 16px;
+  top: 14px;
+  bottom: 14px;
 
   width: 3px;
 
   border-radius: 3px;
 
-  background: #70dca0;
+  background: #79e8ab;
 }
 
 .process-list li::after {
   display: none;
 }
-
+    
 .process-list li:nth-child(2),
 .process-list li:nth-child(3) {
   background: #fbf7ee;
@@ -2391,6 +2384,20 @@ gap: 20px;
     gap: 36px;
   }
 
+}
+.process-note-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.62rem;
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  color: #42a974;
 }
     
   </style>
@@ -3035,10 +3042,18 @@ not just as a reflection of the English original.
       </p>
 
       <ul class="process-list">
-  <li>Your book’s length, genre, and what the project will involve</li>
-  <li>The timeline and agreed delivery date</li>
-  <li>Any style notes or reference material you’d like me to keep in mind</li>
-</ul>
+ <li>
+  <span class="process-note-label">Project scope</span>
+  Your book’s length, genre, and what the project will involve
+</li>
+ <li>
+  <span class="process-note-label">Timeline</span>
+  The timeline and agreed delivery date
+</li>
+<li>
+  <span class="process-note-label">Style notes</span>
+  Any style notes or reference material you’d like me to keep in mind
+</li>
 
     </article>
 
