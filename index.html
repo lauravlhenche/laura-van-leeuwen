@@ -2784,6 +2784,95 @@ gap: 20px;
   }
 
 }
+    .deposit-summary {
+  width: min(100%, 620px) !important;
+  margin: 34px auto 0 !important;
+  padding: 0 !important;
+
+  display: grid !important;
+  grid-template-columns: 1fr 1px 1fr !important;
+  align-items: stretch !important;
+
+  background: rgba(255, 253, 248, 0.58) !important;
+
+  border: 1px solid rgba(13, 17, 23, 0.10) !important;
+  border-radius: 14px !important;
+
+  box-shadow: 0 12px 28px rgba(13, 17, 23, 0.045) !important;
+
+  overflow: hidden !important;
+}
+
+.deposit-summary-item {
+  min-width: 0 !important;
+  padding: 20px 26px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 4px !important;
+
+  text-align: center !important;
+}
+
+.deposit-summary-number {
+  font-family: "Lora", serif !important;
+  font-size: 1.65rem !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+
+  color: #0d1117 !important;
+}
+
+.deposit-summary-label {
+  font-family: "DM Sans", sans-serif !important;
+  font-size: 0.62rem !important;
+  font-weight: 800 !important;
+
+  line-height: 1.35 !important;
+  letter-spacing: 0.09em !important;
+  text-transform: uppercase !important;
+
+  color: rgba(13, 17, 23, 0.62) !important;
+}
+
+.deposit-summary-divider {
+  display: block !important;
+
+  width: 1px !important;
+  height: auto !important;
+
+  margin: 14px 0 !important;
+
+  background: rgba(13, 17, 23, 0.12) !important;
+}
+
+@media (max-width: 620px) {
+
+  .deposit-summary {
+    width: 100% !important;
+    grid-template-columns: 1fr 1px 1fr !important;
+
+    margin-top: 28px !important;
+
+    border-radius: 12px !important;
+  }
+
+  .deposit-summary-item {
+    padding: 16px 10px !important;
+  }
+
+  .deposit-summary-number {
+    font-size: 1.35rem !important;
+  }
+
+  .deposit-summary-label {
+    font-size: 0.54rem !important;
+  }
+
+}
   </style>
 </head>
 
