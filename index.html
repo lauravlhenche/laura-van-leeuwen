@@ -2602,7 +2602,7 @@ gap: 20px;
 ========================= */
 
 .deposit-notice {
-  padding: 76px 24px;
+  padding: 76px 24px 86px;
   background: #79e8ab;
   text-align: center;
 }
@@ -2705,29 +2705,32 @@ gap: 20px;
 }
 
 }
-    .deposit-ornament {
+.deposit-ornament {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
 
-  margin-top: 28px;
+  gap: 18px;
+
+  margin-top: 40px;
 }
 
-.deposit-ornament span {
-  width: 54px;
+.deposit-ornament-line {
+  width: 52px;
   height: 1px;
 
-  background: rgba(13, 17, 23, 0.22);
+  background: rgba(13, 17, 23, 0.18);
 }
 
-.deposit-ornament svg {
-  width: 18px;
-  height: 18px;
+.deposit-book-icon {
+  width: 30px;
+  height: 22px;
 
   fill: none;
-  stroke: #0d1117;
+  stroke: rgba(13, 17, 23, 0.72);
   stroke-width: 1.25;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
   </style>
 </head>
@@ -3507,14 +3510,28 @@ not just as a reflection of the English original.
       Once the scope, timeline and final quote are agreed, a 50% deposit reserves your project in my schedule. The remaining balance is due on delivery.
     </p>
 <div class="deposit-ornament" aria-hidden="true">
-  <span></span>
-  <svg viewBox="0 0 24 24" role="presentation">
-    <path d="M12 4.5l2.1 5.4L19.5 12l-5.4 2.1L12 19.5l-2.1-5.4L4.5 12l5.4-2.1L12 4.5z"/>
-  </svg>
-  <span></span>
-</div>
 
-  </div>
+  <span class="deposit-ornament-line"></span>
+
+  <svg class="deposit-book-icon" viewBox="0 0 40 28" role="presentation">
+    <path d="M20 23
+             C16 19, 11 18, 5 18
+             V5
+             C11 5, 16 7, 20 11
+             Z" />
+
+    <path d="M20 23
+             C24 19, 29 18, 35 18
+             V5
+             C29 5, 24 7, 20 11
+             Z" />
+
+    <path d="M20 11 V23" />
+  </svg>
+
+  <span class="deposit-ornament-line"></span>
+
+</div>
 
 </section>
 
