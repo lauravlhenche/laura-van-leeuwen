@@ -2732,6 +2732,32 @@ gap: 20px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+    .deposit-payment-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-top: 46px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: rgba(13, 17, 23, 0.72);
+}
+
+.deposit-payment-dot {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: rgba(13, 17, 23, 0.42);
+}
   </style>
 </head>
 
@@ -3509,28 +3535,11 @@ not just as a reflection of the English original.
     <p>
       Once the scope, timeline and final quote are agreed, a 50% deposit reserves your project in my schedule. The remaining balance is due on delivery.
     </p>
-<div class="deposit-ornament" aria-hidden="true">
 
-  <span class="deposit-ornament-line"></span>
-
-  <svg class="deposit-book-icon" viewBox="0 0 40 28" role="presentation">
-    <path d="M20 23
-             C16 19, 11 18, 5 18
-             V5
-             C11 5, 16 7, 20 11
-             Z" />
-
-    <path d="M20 23
-             C24 19, 29 18, 35 18
-             V5
-             C29 5, 24 7, 20 11
-             Z" />
-
-    <path d="M20 11 V23" />
-  </svg>
-
-  <span class="deposit-ornament-line"></span>
-
+    <div class="deposit-payment-line">
+  <span>50% to book</span>
+  <span class="deposit-payment-dot"></span>
+  <span>50% on delivery</span>
 </div>
 
 </section>
