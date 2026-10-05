@@ -2730,24 +2730,41 @@ gap: 20px;
   
 }
 
-  .deposit-summary {
-    margin-top: 28px;
-    grid-template-columns: 1fr 1px 1fr;
-    border-radius: 13px;
-  }
+.deposit-summary {
+  margin-top: 34px;
 
-  .deposit-summary-item {
-    padding: 16px 9px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .deposit-summary-number {
-    font-size: 1.4rem;
-  }
+  gap: 14px;
+}
 
-  .deposit-summary-label {
-    font-size: 0.53rem;
-  }
+.deposit-summary-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 
+  gap: 12px;
+}
+
+.deposit-summary-number {
+  font-family: "Lora", serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+
+  color: #1d2a23;
+}
+
+.deposit-summary-label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #317653;
 }
     
   </style>
@@ -3527,21 +3544,19 @@ not just as a reflection of the English original.
       Once the scope, timeline and final quote are agreed, a 50% deposit reserves your project in my schedule. The remaining balance is due on delivery.
     </p>
 
-    <div class="deposit-summary">
+<div class="deposit-summary">
 
-      <div class="deposit-summary-item">
-        <span class="deposit-summary-number">50%</span>
-        <span class="deposit-summary-label">To reserve your project</span>
-      </div>
+  <div class="deposit-summary-row">
+    <span class="deposit-summary-number">50%</span>
+    <span class="deposit-summary-label">To reserve your project</span>
+  </div>
 
-      <span class="deposit-summary-divider"></span>
+  <div class="deposit-summary-row">
+    <span class="deposit-summary-number">50%</span>
+    <span class="deposit-summary-label">On final delivery</span>
+  </div>
 
-      <div class="deposit-summary-item">
-        <span class="deposit-summary-number">50%</span>
-        <span class="deposit-summary-label">On final delivery</span>
-      </div>
-
-    </div>
+</div>
 
   </div>
 </section>
