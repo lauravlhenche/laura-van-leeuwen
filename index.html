@@ -2595,9 +2595,7 @@ gap: 20px;
   .site-logo {
     margin-left: 14px;
   }
-
-}
-    /* =========================
+      /* =========================
    DEPOSIT NOTICE
 ========================= */
 
@@ -2608,7 +2606,7 @@ gap: 20px;
 }
 
 .deposit-notice-inner {
-  width: min(calc(100% - 40px), 760px);
+  width: min(calc(100% - 40px), 820px);
   margin: 0 auto;
 }
 
@@ -2648,44 +2646,12 @@ gap: 20px;
   color: rgba(13, 17, 23, 0.82);
 }
 
-.deposit-badge-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 22px;
-  height: 22px;
-
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.65);
-
-  font-size: 0.82rem;
-  font-weight: 800;
-  color: #0d1117;
-}
-
-@media (max-width: 620px) {
-
-  .deposit-notice {
-    padding: 52px 20px;
-  }
-
-  .deposit-notice-inner {
-    width: 100%;
-  }
-
-  .deposit-notice h2 {
-    font-size: 1.75rem;
-  }
-
-  .deposit-notice p {
-    font-size: 0.88rem;
-    line-height: 1.6;
-  }
+/* PAYMENT SUMMARY */
 
 .deposit-summary {
-  width: min(100%, 610px);
-  margin: 38px auto 0;
+  width: min(100%, 620px);
+  margin: 36px auto 0;
 
   display: grid;
   grid-template-columns: 1fr 1px 1fr;
@@ -2696,13 +2662,13 @@ gap: 20px;
   border: 1px solid rgba(13, 17, 23, 0.08);
   border-radius: 16px;
 
-  box-shadow: 0 14px 32px rgba(13, 17, 23, 0.06);
+  box-shadow: 0 12px 30px rgba(13, 17, 23, 0.055);
 
   overflow: hidden;
 }
 
 .deposit-summary-item {
-  padding: 21px 24px;
+  padding: 20px 24px;
 
   display: flex;
   flex-direction: column;
@@ -2710,12 +2676,13 @@ gap: 20px;
   justify-content: center;
 
   gap: 5px;
+
   text-align: center;
 }
 
 .deposit-summary-number {
   font-family: "Lora", serif;
-  font-size: 1.65rem;
+  font-size: 1.7rem;
   font-weight: 500;
   line-height: 1;
 
@@ -2731,41 +2698,58 @@ gap: 20px;
   line-height: 1.35;
   text-transform: uppercase;
 
-  color: rgba(13, 17, 23, 0.60);
+  color: rgba(13, 17, 23, 0.62);
 }
 
 .deposit-summary-divider {
   width: 1px;
   margin: 14px 0;
 
-  background: rgba(13, 17, 23, 0.12);
+  background: rgba(13, 17, 23, 0.13);
 }
+
 
 @media (max-width: 620px) {
 
-  .deposit-summary {
+  .deposit-notice {
+    padding: 52px 18px 58px;
+  }
+
+  .deposit-notice-inner {
     width: 100%;
-    padding: 14px 16px;
+  }
 
-    gap: 14px;
+  .deposit-notice h2 {
+    font-size: 1.75rem;
+  }
 
-    border-radius: 16px;
+  .deposit-notice p {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+  
+}
+
+  .deposit-summary {
+    margin-top: 28px;
+    grid-template-columns: 1fr 1px 1fr;
+    border-radius: 13px;
   }
 
   .deposit-summary-item {
-    flex: 1;
-    flex-direction: column;
-    align-items: center;
+    padding: 16px 9px;
+  }
 
-    gap: 2px;
-
-    text-align: center;
+  .deposit-summary-number {
+    font-size: 1.4rem;
   }
 
   .deposit-summary-label {
-    font-size: 0.61rem;
-    line-height: 1.35;
+    font-size: 0.53rem;
   }
+
+}
+    
   </style>
 </head>
 
