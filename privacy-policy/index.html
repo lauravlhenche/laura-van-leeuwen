@@ -44,12 +44,16 @@
       justify-content: space-between;
     }
 
-    .legal-brand {
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      line-height: 1.3;
-    }
+.legal-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
 
     .back-link {
       font-family: "DM Sans", sans-serif;
@@ -60,12 +64,12 @@
       text-decoration: none;
     }
 
-    .legal-page {
-      width: min(calc(100% - 48px), 820px);
-      margin: 0 auto;
-
-      padding: 90px 0 110px;
-    }
+.legal-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
 
     .legal-kicker {
       display: block;
@@ -180,10 +184,20 @@
 
   <header class="legal-header">
 
-    <div class="legal-brand">
-      Literary Translator<br>
-      EN → ES
-    </div>
+<div class="legal-brand">
+
+  <img
+    src="../laura-van-leeuwen-favicon.png"
+    alt="Laura van Leeuwen logo"
+    class="legal-logo"
+  >
+
+  <div>
+    Literary Translator<br>
+    EN → ES
+  </div>
+
+</div>
 
     <a class="back-link" href="../">
       ← Back to home
