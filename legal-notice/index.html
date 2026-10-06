@@ -199,6 +199,29 @@
       }
 
     }
+    .legal-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.legal-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
+    @media (max-width: 600px) {
+  .legal-logo {
+    width: 32px;
+    height: 32px;
+  }
+}
 
   </style>
 </head>
@@ -207,20 +230,20 @@
 
   <header class="legal-header">
 
-    <div class="legal-brand">
+<div class="legal-brand">
 
-      <img
-        src="../laura-van-leeuwen-logo.png"
-        alt=""
-        class="legal-logo"
-      >
+  <img
+    src="../laura-van-leeuwen-favicon.png"
+    alt="Laura van Leeuwen"
+    class="legal-logo"
+  >
 
-      <div>
-        Literary Translator<br>
-        EN → ES
-      </div>
+  <div>
+    Literary Translator<br>
+    EN → ES
+  </div>
 
-    </div>
+</div>
 
     <a class="back-link" href="../">
       ← Back to home
