@@ -2689,9 +2689,7 @@ gap: 20px;
 }
 
 .deposit-summary-divider {
-  width: 1px;
-  height: 138px;
-  background: rgba(13, 17, 23, 0.12);
+  height: 92px;
 }
 
 /* MOBILE */
@@ -2717,43 +2715,41 @@ gap: 20px;
     line-height: 1.65;
   }
 
- .deposit-summary {
+.deposit-summary {
   width: 100%;
-  margin-top: 34px;
-  padding: 24px 22px;
+  margin-top: 32px;
+  padding: 12px 22px;
 
   grid-template-columns: 1fr;
-  gap: 20px;
 
   border-radius: 24px;
 }
 
-.deposit-summary-divider {
-  width: 100%;
-  height: 1px;
+.deposit-summary-item {
+  padding: 24px 8px;
+}
+
+.deposit-summary-item + .deposit-summary-item {
+  border-left: 0;
+  border-top: 1px solid rgba(13, 17, 23, 0.12);
 }
 
 .deposit-summary-number {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
 }
+  
+.deposit-summary-label {
+  margin-top: 12px;
 
-  .deposit-summary-item {
-    padding: 6px 8px;
-    gap: 6px;
-  }
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
 
-  .deposit-summary-number {
-    font-size: 2.35rem;
-  }
+  line-height: 1.35;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 
-  .deposit-summary-label {
-    font-size: 0.72rem;
-    letter-spacing: 0.1em;
-  }
-
-  .deposit-summary-divider {
-    height: 92px;
-  }
+  color: rgba(13, 17, 23, 0.62);
 }
 
 
@@ -3573,34 +3569,32 @@ not just as a reflection of the English original.
 
     <h2>A 30% deposit secures your project.</h2>
 
-<p>
-  Once the scope, timeline and final quote are agreed, a 30% deposit reserves your
-  project in my schedule. A further 40% is due at the agreed midpoint, with the
-  remaining 30% due on final delivery.
-</p>
+    <p>
+      Once the scope, timeline and final quote are agreed, a 30% deposit reserves
+      your project in my schedule. A further 30% is due once 50% of the agreed
+      manuscript has been completed, with the remaining 40% due on final delivery.
+    </p>
 
-<div class="deposit-summary">
+    <div class="deposit-summary">
 
-  <div class="deposit-summary-item">
-    <span class="deposit-summary-number">30%</span>
-    <span class="deposit-summary-label">To reserve your project</span>
+      <div class="deposit-summary-item">
+        <span class="deposit-summary-number">30%</span>
+        <span class="deposit-summary-label">To reserve your project</span>
+      </div>
+
+      <div class="deposit-summary-item">
+        <span class="deposit-summary-number">30%</span>
+        <span class="deposit-summary-label">At 50% completion</span>
+      </div>
+
+      <div class="deposit-summary-item">
+        <span class="deposit-summary-number">40%</span>
+        <span class="deposit-summary-label">On final delivery</span>
+      </div>
+
+    </div>
+
   </div>
-
-  <span class="deposit-summary-divider"></span>
-
-  <div class="deposit-summary-item">
-    <span class="deposit-summary-number">40%</span>
-    <span class="deposit-summary-label">At the agreed midpoint</span>
-  </div>
-
-  <span class="deposit-summary-divider"></span>
-
-  <div class="deposit-summary-item">
-    <span class="deposit-summary-number">30%</span>
-    <span class="deposit-summary-label">On final delivery</span>
-  </div>
-
-</div>
 
 </section>
 
