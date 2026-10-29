@@ -1249,6 +1249,52 @@ header nav a {
     justify-content: center;
     min-height: 60px;
 }
+        /* Seis categorías en una fila */
+.igaming-band-grid.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 0;
+    width: 100%;
+}
+
+.igaming-band-grid.industry-grid .igaming-band-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-width: 0;
+    padding: 10px 8px;
+    border: 0;
+}
+
+.igaming-band-grid.industry-grid .igaming-band-item::before,
+.igaming-band-grid.industry-grid .igaming-band-item::after {
+    display: none;
+}
+
+.igaming-band-grid.industry-grid .igaming-band-icon {
+    flex-shrink: 0;
+}
+
+.igaming-band-grid.industry-grid strong {
+    font-size: 0.8rem;
+    line-height: 1.3;
+}
+
+/* Pantallas medianas: tres columnas */
+@media (max-width: 1000px) {
+    .igaming-band-grid.industry-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px 0;
+    }
+}
+
+/* Móvil: dos columnas */
+@media (max-width: 600px) {
+    .igaming-band-grid.industry-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
 </style>  
     
     <style>
