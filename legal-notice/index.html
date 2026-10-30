@@ -1,387 +1,948 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Legal Notice | Laura van Leeuwen</title>
+    <title>Legal Notice | Laura van Leeuwen</title>
 
-  <meta
-    name="description"
-    content="Legal Notice for lauravanleeuwen.com."
-  >
+    <meta
+        name="description"
+        content="Website ownership, terms of use and legal information for lauravanleeuwen.com."
+    >
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="canonical"
+        href="https://lauravanleeuwen.com/legal-notice/"
+    >
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        rel="icon"
+        type="image/webp"
+        sizes="64x64"
+        href="/laura-van-leeuwen-favicon.webp?v=2"
+    >
 
-  <link rel="icon" type="image/png" href="../laura-van-leeuwen-favicon.webp">
+    <link
+        rel="preload"
+        href="/laura-van-leeuwen-logo.webp?v=2"
+        as="image"
+        type="image/webp"
+    >
 
-  <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
 
-    body {
-      background: #fffdf9;
-      color: #0d1117;
-    }
+    <style>
+        :root {
+            --navy: #101828;
+            --blue: #245cff;
+            --yellow: #ffc83d;
+            --cream: #f7f1e8;
+            --white: #ffffff;
+            --text: #344054;
+            --muted: #667085;
+            --border: #d8dee8;
+        }
 
-    .legal-header {
-      padding: 28px 40px;
+        * {
+            box-sizing: border-box;
+        }
 
-      background: #79e8ab;
+        html {
+            scroll-behavior: smooth;
+        }
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+        body {
+            margin: 0;
+            color: var(--text);
+            background: var(--white);
+            font-family: "Inter", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
 
-    .legal-brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
+        a {
+            color: var(--blue);
+            overflow-wrap: anywhere;
+        }
 
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.82rem;
-      font-weight: 700;
-      line-height: 1.3;
-    }
+        a:focus-visible {
+            outline: 3px solid var(--blue);
+            outline-offset: 4px;
+            border-radius: 3px;
+        }
 
-    .legal-logo {
-      width: 38px;
-      height: 38px;
-      object-fit: contain;
-    }
+        /* HEADER */
 
-    .back-link {
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.8rem;
-      font-weight: 700;
+        .site-header {
+            color: var(--white);
+            background: var(--navy);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
 
-      color: #0d1117;
-      text-decoration: none;
+        .site-header-inner {
+            width: min(900px, calc(100% - 40px));
+            min-height: 96px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+        }
 
-      border-bottom: 1px solid rgba(13, 17, 23, 0.35);
-      padding-bottom: 2px;
-    }
+        .brand,
+        .footer-brand {
+            min-width: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--white);
+            text-decoration: none;
+        }
 
-    .legal-page {
-      width: min(calc(100% - 48px), 820px);
-      margin: 0 auto;
+        .brand-logo,
+        .footer-logo {
+            width: 54px;
+            height: 54px;
+            flex: 0 0 54px;
+            display: block;
+            object-fit: contain;
+        }
 
-      padding: 90px 0 110px;
-    }
+        .brand-name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: "Plus Jakarta Sans", Arial, sans-serif;
+            white-space: nowrap;
+        }
 
-    .legal-kicker {
-      display: block;
-      margin-bottom: 14px;
+        .brand-name-main {
+            color: var(--white);
+            font-size: 1.14rem;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.045em;
+        }
 
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.66rem;
-      font-weight: 800;
+        .brand-name-first {
+            margin-top: 5px;
+            color: var(--yellow);
+            font-size: 0.7rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
 
-      letter-spacing: 0.17em;
-      text-transform: uppercase;
+        .site-nav,
+        .footer-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-      color: #3b9d6a;
-    }
+        .site-nav a,
+        .footer-nav a {
+            min-height: 44px;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blue);
+            background: var(--white);
+            border: 1px solid var(--white);
+            border-radius: 999px;
+            font-size: 0.86rem;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
 
-    h1 {
-      margin-bottom: 18px;
+        .site-nav a:hover,
+        .footer-nav a:hover {
+            color: var(--white);
+            background: var(--blue);
+            border-color: var(--blue);
+            box-shadow: 0 8px 20px rgba(36, 92, 255, 0.28);
+            transform: translateY(-1px);
+        }
 
-      font-family: "Lora", serif;
-      font-size: clamp(2.8rem, 6vw, 4.8rem);
-      font-weight: 500;
-      line-height: 1.05;
-    }
+        /* LEGAL CONTENT */
 
-    .updated {
-      margin-bottom: 58px;
+        .legal-hero {
+            padding: 64px 24px;
+            text-align: center;
+            background: var(--cream);
+        }
 
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.78rem;
+        .legal-hero h1 {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.9rem, 2.8vw, 2.3rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.035em;
+        }
 
-      color: #788292;
-    }
+        .legal-section {
+            padding: 64px 32px 90px;
+        }
 
-    h2 {
-      margin: 48px 0 15px;
+        .legal-content {
+            width: min(806px, 100%);
+            margin: 0 auto;
+            padding: 64px 58px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            box-shadow: 0 14px 38px rgba(16, 24, 40, 0.06);
+        }
 
-      font-family: "Lora", serif;
-      font-size: 1.55rem;
-      font-weight: 500;
-    }
+        .legal-last-updated {
+            margin: 0 0 26px;
+            color: var(--navy);
+        }
 
-    p {
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.94rem;
-      line-height: 1.75;
+        .legal-introduction {
+            margin: 0 0 38px;
+            padding: 20px 24px;
+            background: var(--cream);
+            border-left: 2px solid var(--yellow);
+            border-radius: 0 14px 14px 0;
+        }
 
-      color: #4a4641;
-    }
+        .legal-introduction p,
+        .legal-block p {
+            margin: 0 0 14px;
+        }
 
-    p + p {
-      margin-top: 14px;
-    }
+        .legal-introduction p:last-child,
+        .legal-block p:last-child {
+            margin-bottom: 0;
+        }
 
-    strong {
-      color: #0d1117;
-    }
+        .legal-block {
+            padding: 22px 0;
+        }
 
-    a {
-      color: #237a50;
-    }
+        .legal-block h2 {
+            margin: 0 0 14px;
+            color: var(--navy);
+            font-size: clamp(1.18rem, 2vw, 1.36rem);
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+        }
 
-    .legal-details {
-      margin-top: 18px;
-      padding: 22px 24px;
+        .legal-block ul {
+            margin: 14px 0;
+            padding-left: 1.25rem;
+        }
 
-      background: #fbf7ef;
+        .legal-block li {
+            padding-left: 0.3rem;
+        }
 
-      border: 1px solid rgba(74, 61, 48, 0.08);
-      border-radius: 12px;
-    }
+        .legal-block li + li {
+            margin-top: 9px;
+        }
 
-    .legal-footer {
-      padding: 28px 24px;
+        .legal-block strong {
+            color: var(--navy);
+        }
 
-      background: #79e8ab;
+        .owner-details {
+            margin: 16px 0;
+        }
 
-      text-align: center;
+        .owner-details p {
+            margin: 0;
+        }
 
-      font-family: "DM Sans", sans-serif;
-      font-size: 0.72rem;
-    }
+        .owner-details p + p {
+            margin-top: 7px;
+        }
 
-    @media (max-width: 600px) {
+        .owner-details a {
+            font-weight: 600;
+            text-underline-offset: 3px;
+        }
 
-      .legal-header {
-        padding: 20px;
-      }
+        .back-home {
+            width: min(806px, 100%);
+            margin: 40px auto 0;
+        }
 
-      .legal-brand {
-        font-size: 0.72rem;
-      }
+        .back-home a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--navy);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
 
-      .legal-logo {
-        width: 32px;
-        height: 32px;
-      }
+        .back-home a:hover {
+            color: var(--blue);
+        }
 
-      .back-link {
-        font-size: 0.72rem;
-      }
+        /* FOOTER */
 
-      .legal-page {
-        width: calc(100% - 36px);
-        padding: 60px 0 80px;
-      }
+        .site-footer {
+            padding: 46px 28px 24px;
+            color: var(--white);
+            background: var(--navy);
+        }
 
-      h1 {
-        font-size: 2.5rem;
-      }
+        .site-footer-inner,
+        .site-footer-bottom {
+            width: min(1050px, 100%);
+            margin: 0 auto;
+        }
 
-      h2 {
-        font-size: 1.35rem;
-      }
+        .site-footer-inner {
+            padding-bottom: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
 
-      p {
-        font-size: 0.9rem;
-      }
+        .site-footer-main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+        }
 
-    }
-    .legal-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+        .site-footer-description {
+            max-width: 380px;
+            margin: 0;
+            color: #aeb9cc;
+            font-size: 0.82rem;
+            line-height: 1.55;
+        }
 
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
+        .site-footer-location {
+            color: #8f9bad;
+            font-size: 0.77rem;
+            line-height: 1.5;
+        }
 
-.legal-logo {
-  width: 38px;
-  height: 38px;
-  object-fit: contain;
-  display: block;
-}
-    @media (max-width: 600px) {
-  .legal-logo {
-    width: 32px;
-    height: 32px;
-  }
-}
+        .site-footer-location a,
+        .site-footer-legal a {
+            color: #d5dbe5;
+            font-weight: 600;
+            text-decoration: none;
+        }
 
-  </style>
+        .site-footer-location a:hover,
+        .site-footer-legal a:hover {
+            color: var(--white);
+        }
+
+        .site-footer-bottom {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            color: #8f9bad;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            font-size: 0.77rem;
+        }
+
+        .site-footer-legal {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+
+        .site-footer-copyright {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 760px) {
+            .site-header-inner {
+                width: calc(100% - 32px);
+                min-height: 78px;
+                gap: 14px;
+            }
+
+            .brand-logo,
+            .footer-logo {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px;
+            }
+
+            .brand-name-main {
+                font-size: 0.88rem;
+            }
+
+            .brand-name-first {
+                font-size: 0.58rem;
+            }
+
+            .site-nav {
+                gap: 5px;
+            }
+
+            .site-nav a {
+                min-height: 38px;
+                padding: 0 11px;
+                font-size: 0.75rem;
+            }
+
+            .legal-hero {
+                padding: 48px 20px;
+            }
+
+            .legal-section {
+                padding: 40px 20px 62px;
+            }
+
+            .legal-content {
+                padding: 40px 28px;
+                border-radius: 18px;
+            }
+
+            .site-footer {
+                padding: 40px 20px 22px;
+            }
+
+            .site-footer-inner {
+                padding-bottom: 28px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 28px;
+            }
+
+            .footer-nav {
+                flex-wrap: wrap;
+            }
+
+            .site-footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .site-footer-copyright {
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .site-header .brand-name {
+                display: none;
+            }
+
+            .site-nav a {
+                min-height: 36px;
+                padding: 0 9px;
+                font-size: 0.7rem;
+            }
+
+            .legal-section {
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+
+            .legal-content {
+                padding: 30px 21px;
+            }
+
+            .legal-introduction {
+                padding: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+
+        @media print {
+            .site-header,
+            .site-footer,
+            .back-home {
+                display: none;
+            }
+
+            .legal-hero,
+            .legal-section {
+                padding: 24px 0;
+                background: var(--white);
+            }
+
+            .legal-content {
+                width: 100%;
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <header class="legal-header">
+    <header class="site-header">
+        <div class="site-header-inner">
 
-<div class="legal-brand">
+            <a
+                class="brand"
+                href="/"
+                aria-label="Laura van Leeuwen — Home"
+            >
+                <img
+                    class="brand-logo"
+                    src="/laura-van-leeuwen-logo.webp?v=2"
+                    alt=""
+                    width="54"
+                    height="54"
+                    decoding="async"
+                    fetchpriority="high"
+                >
 
-  <img
-    src="../laura-van-leeuwen-favicon.webp"
-    alt="Laura van Leeuwen"
-    class="legal-logo"
-  >
+                <span class="brand-name">
+                    <span class="brand-name-main">van leeuwen</span>
+                    <span class="brand-name-first">Laura</span>
+                </span>
+            </a>
 
-  <div>
-    Literary Translator<br>
-    EN → ES
-  </div>
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="/#order">Order</a>
+                <a href="/#work">Work</a>
+                <a href="/#contact">Contact</a>
+            </nav>
 
-</div>
+        </div>
+    </header>
 
-    <a class="back-link" href="../">
-      ← Back to home
-    </a>
+    <main>
 
-  </header>
+        <section class="legal-hero" aria-labelledby="legal-title">
+            <h1 id="legal-title">Legal Notice</h1>
+        </section>
 
+        <section class="legal-section">
+            <article class="legal-content">
 
-  <main class="legal-page">
+                <p class="legal-last-updated">
+                    <strong>Last updated:</strong>
+                    <time datetime="2026-10-30">30 October 2026</time>
+                </p>
 
-    <span class="legal-kicker">Legal</span>
+                <div class="legal-introduction">
+                    <p>
+                        This Legal Notice identifies the person responsible
+                        for lauravanleeuwen.com and explains the conditions
+                        that apply when you use this website.
+                    </p>
+                </div>
 
-    <h1>Legal Notice</h1>
+                <section class="legal-block" aria-labelledby="owner">
+                    <h2 id="owner">1. Website owner</h2>
 
-    <p class="updated">Last updated: October 2026</p>
+                    <div class="owner-details">
 
+                        <p>
+                            <strong>Owner:</strong>
+                            Laura van Leeuwen Henche
+                        </p>
 
-    <h2>Website owner</h2>
+                        <p>
+                            <strong>Professional name:</strong>
+                            Laura van Leeuwen
+                        </p>
 
-    <p>
-      This website is owned and operated by Laura van Leeuwen,
-      a freelance literary translator based in Spain.
-    </p>
+                        <p>
+                            <strong>Tax identification number (NIF):</strong>
+                            ES48719027-J
+                        </p>
 
-    <div class="legal-details">
+                        <p>
+                            <strong>Business address:</strong>
+                            Calle del Gantxo nº14, San Vicente del Raspeig, 
+                            03690, Alicante, Spain
+                        </p>
 
-      <p>
-        <strong>Laura van Leeuwen</strong><br>
-        Freelance Literary Translator<br>
-        Spain
-      </p>
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:contact@lauravanleeuwen.com">
+                                contact@lauravanleeuwen.com
+                            </a>
+                        </p>
 
-      <p>
-        <strong>Website:</strong>
-        lauravanleeuwen.com
-      </p>
+                        <p>
+                            <strong>Website:</strong>
+                            <a href="https://lauravanleeuwen.com/">
+                                https://lauravanleeuwen.com/
+                            </a>
+                        </p>
 
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:contact@lauravanleeuwen.com">
-          contact@lauravanleeuwen.com
-        </a>
-      </p>
+                    </div>
 
-      <p>
-        <strong>Tax identification number (NIF):</strong>
-        ES48719027J
-      </p>
+                    <p>
+                        In this Legal Notice, “I”, “me” and “my” refer
+                        to Laura van Leeuwen Henche, working under
+                        the professional name Laura van Leeuwen.
+                    </p>
+                </section>
 
-      <p>
-        <strong>Professional address:</strong><br>
-        C/del Gantxo nº14, San Vicente del Raspeig,
-        Alicante, 03690, Spain
-      </p>
+                <section class="legal-block" aria-labelledby="purpose">
+                    <h2 id="purpose">2. Purpose of the website</h2>
 
-    </div>
+                    <p>
+                        This website presents my freelance services:
+                        content writing in English and Spanish,
+                        English-to-Spanish translation and localisation,
+                        and Spanish proofreading.
+                    </p>
 
+                    <p>
+                        My work covers different industries and formats,
+                        including SEO articles, website copy, marketing
+                        materials, software interfaces, technical
+                        documentation and publishing projects.
+                    </p>
 
-    <h2>Professional activity</h2>
+                    <p>
+                        The website also allows visitors to view work
+                        samples, contact me, request a quote and,
+                        where available, place and pay for an order.
+                    </p>
+                </section>
 
-    <p>
-      Laura van Leeuwen provides literary translation, proofreading
-      and related language services, primarily from English into
-      European Spanish.
-    </p>
+                <section class="legal-block" aria-labelledby="use">
+                    <h2 id="use">3. Website use</h2>
 
-    <p>
-      Information provided on this website is intended to describe
-      the services offered and does not constitute a binding offer
-      unless expressly agreed in writing.
-    </p>
+                    <p>
+                        You must use this website lawfully and in a way
+                        that does not damage it, interfere with its
+                        security or prevent other visitors from using it.
+                    </p>
 
+                    <p>You must not use the website to:</p>
 
-    <h2>Intellectual property</h2>
+                    <ul>
+                        <li>
+                            Introduce malicious software or harmful code.
+                        </li>
 
-    <p>
-      Unless otherwise stated, the text, design, branding and original
-      content published on this website belong to Laura van Leeuwen
-      and may not be reproduced, distributed or used without prior
-      permission, except where permitted by law.
-    </p>
+                        <li>
+                            Attempt to gain unauthorised access to
+                            the website or related systems.
+                        </li>
 
-    <p>
-      Book covers, titles, author names, trademarks and other
-      third-party materials displayed in the portfolio remain the
-      property of their respective rights holders and are shown
-      solely to identify work completed or projects referenced.
-    </p>
+                        <li>
+                            Collect information through unlawful
+                            automated methods.
+                        </li>
 
+                        <li>
+                            Send unlawful material or infringe
+                            intellectual property, privacy or other
+                            legal rights.
+                        </li>
+                    </ul>
+                </section>
 
-    <h2>External links</h2>
+                <section
+                    class="legal-block"
+                    aria-labelledby="intellectual-property"
+                >
+                    <h2 id="intellectual-property">
+                        4. Intellectual property and portfolio samples
+                    </h2>
 
-    <p>
-      This website may contain links to third-party websites.
-      Laura van Leeuwen is not responsible for the availability,
-      accuracy, content or privacy practices of external websites.
-    </p>
+                    <p>
+                        Unless otherwise indicated, the original text,
+                        design, branding and other materials on this
+                        website belong to me or to their respective
+                        rights holders.
+                    </p>
 
+                    <p>
+                        Access to the website does not grant a licence
+                        to reproduce, distribute, modify, republish or
+                        commercially exploit its content. Uses permitted
+                        by law are not affected.
+                    </p>
 
-    <h2>Liability</h2>
+                    <p>
+                        Portfolio samples are provided to illustrate
+                        my work. Viewing or downloading a sample does
+                        not give permission to republish it, reuse it
+                        commercially or present it as your own work.
+                    </p>
 
-    <p>
-      Reasonable care is taken to keep the information on this website
-      accurate and up to date. However, no guarantee is made that all
-      information will always be complete, current or free from errors.
-    </p>
+                    <p>
+                        Client names, company logos, trademarks and
+                        third-party materials remain the property of
+                        their respective owners. Their appearance on
+                        this website does not, by itself, imply an
+                        endorsement or an ongoing commercial relationship.
+                    </p>
 
-    <p>
-      Laura van Leeuwen is not responsible for interruptions or
-      technical issues outside her reasonable control.
-    </p>
+                    <p>
+                        Rights in commissioned work are governed by
+                        the terms agreed for the relevant project.
+                    </p>
+                </section>
 
+                <section class="legal-block" aria-labelledby="accuracy">
+                    <h2 id="accuracy">
+                        5. Information and website availability
+                    </h2>
 
-    <h2>Governing law</h2>
+                    <p>
+                        I take reasonable care to keep website information
+                        accurate and up to date. Service descriptions
+                        and portfolio samples provide general information;
+                        the scope and requirements of each project are
+                        confirmed separately.
+                    </p>
 
-    <p>
-      This website and the services offered through it are governed
-      by Spanish law, without prejudice to any mandatory
-      consumer-protection rules that may apply.
-    </p>
+                    <p>
+                        I cannot guarantee uninterrupted or error-free
+                        access to the website. I may update, suspend
+                        or remove content where reasonably necessary.
+                    </p>
 
+                    <p>
+                        Portfolio samples may reflect the information
+                        available when they were created. Legal, tax,
+                        financial, health and other specialist content
+                        is shown as a work sample and should not be
+                        relied on as current professional advice.
+                    </p>
 
-    <h2>Contact</h2>
+                    <p>
+                        Nothing in this Legal Notice excludes or limits
+                        liability that cannot lawfully be excluded
+                        or limited.
+                    </p>
+                </section>
 
-    <p>
-      For questions regarding this Legal Notice, please contact:
-      <a href="mailto:contact@lauravanleeuwen.com">
-        contact@lauravanleeuwen.com
-      </a>.
-    </p>
+                <section class="legal-block" aria-labelledby="links">
+                    <h2 id="links">6. External links</h2>
 
-  </main>
+                    <p>
+                        This website may link to professional profiles,
+                        client websites, references and external service
+                        providers. I do not control those websites or
+                        guarantee that their content will remain
+                        accurate or available.
+                    </p>
 
+                    <p>
+                        External websites apply their own terms and
+                        privacy policies. Any responsibility for links
+                        remains subject to applicable law.
+                    </p>
+                </section>
 
-  <footer class="legal-footer">
-    © 2026 Laura van Leeuwen · Literary Translator EN → ES
-  </footer>
+                <section class="legal-block" aria-labelledby="prices">
+                    <h2 id="prices">7. Prices and taxes</h2>
+
+                    <p>
+                        Published rates and calculator estimates relate
+                        to the selected service, quantity and stated
+                        scope. Additional work may require a separate
+                        quote.
+                    </p>
+
+                    <p>
+                        Prices quoted for business and professional
+                        clients exclude VAT unless expressly stated
+                        otherwise. VAT is added where legally required.
+                        The applicable currency, taxes and final amount
+                        are shown during checkout or confirmed in
+                        writing before you commit to an order.
+                    </p>
+
+                    <p>
+                        Where consumer pricing rules apply, the total
+                        price must include applicable taxes and any
+                        mandatory charges.
+                    </p>
+                </section>
+
+                <section class="legal-block" aria-labelledby="orders">
+                    <h2 id="orders">
+                        8. Services and online orders
+                    </h2>
+
+                    <p>
+                        Professional services and online orders are
+                        governed by the
+                        <a href="/terms-of-service.html">
+                            Terms of Service</a>,
+                        together with the relevant written project
+                        confirmation and any separately agreed terms.
+                    </p>
+
+                    <p>
+                        The project confirmation sets out the agreed
+                        service, language, scope, price, delivery
+                        arrangements and other applicable requirements.
+                    </p>
+
+                    <p>
+                        Mandatory rights under applicable law are
+                        not affected.
+                    </p>
+                </section>
+
+                <section class="legal-block" aria-labelledby="privacy">
+                    <h2 id="privacy">9. Personal data</h2>
+
+                    <p>
+                        Information about the collection and use of
+                        personal data, website providers, analytics
+                        and your data protection rights is available
+                        in the
+                        <a href="/privacy-policy/">Privacy Policy</a>.
+                    </p>
+                </section>
+
+                <section class="legal-block" aria-labelledby="law">
+                    <h2 id="law">
+                        10. Governing law and jurisdiction
+                    </h2>
+
+                    <p>
+                        This Legal Notice is governed by Spanish law,
+                        without prejudice to any mandatory protections
+                        that apply under other applicable laws.
+                    </p>
+
+                    <p>
+                        Disputes will be submitted to the courts
+                        competent under applicable law. Nothing in
+                        this Legal Notice restricts any mandatory
+                        consumer rights concerning applicable law
+                        or jurisdiction.
+                    </p>
+                </section>
+
+                <section class="legal-block" aria-labelledby="contact">
+                    <h2 id="contact">11. Contact</h2>
+
+                    <p>
+                        For questions about this website, its content
+                        or this Legal Notice, email
+                        <a href="mailto:contact@lauravanleeuwen.com">
+                            contact@lauravanleeuwen.com</a>.
+                    </p>
+                </section>
+
+            </article>
+
+            <div class="back-home">
+                <a href="/">
+                    <span aria-hidden="true">←</span>
+                    Back to homepage
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+
+            <div class="site-footer-main">
+
+                <a
+                    class="footer-brand"
+                    href="/"
+                    aria-label="Laura van Leeuwen — Home"
+                >
+                    <img
+                        class="footer-logo"
+                        src="/laura-van-leeuwen-logo.webp?v=2"
+                        alt=""
+                        width="54"
+                        height="54"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <span class="brand-name">
+                        <span class="brand-name-main">van leeuwen</span>
+                        <span class="brand-name-first">Laura</span>
+                    </span>
+                </a>
+
+                <p class="site-footer-description">
+                    SEO content in English and Spanish,
+                    English-to-Spanish translation and Spanish proofreading.
+                </p>
+
+                <div class="site-footer-location">
+                    Based in Spain · Working worldwide ·
+                    <a href="mailto:contact@lauravanleeuwen.com">
+                        contact@lauravanleeuwen.com
+                    </a>
+                </div>
+
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="/#order">Order</a>
+                <a href="/#work">Work</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="site-footer-bottom">
+
+            <div class="site-footer-legal">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a href="/terms-of-service.html">Terms of Service</a>
+                <a href="/legal-notice/" aria-current="page">
+                    Legal Notice
+                </a>
+            </div>
+
+            <span class="site-footer-copyright">
+                © 2026 Laura van Leeuwen. All rights reserved.
+            </span>
+
+        </div>
+    </footer>
 
 </body>
-
 </html>
