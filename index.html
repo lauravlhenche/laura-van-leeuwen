@@ -12109,5 +12109,87 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <!-- FLOATING CONTACT WIDGET END -->
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "67872ec790ae4c2db394fc9356b94707"}'></script><!-- End Cloudflare Web Analytics -->
+        <script>
+(function () {
+    function initUpworkAnimation() {
+        const card = document.querySelector(".upwork-proof-card");
+
+        if (!card) return;
+
+        const number = card.querySelector("[data-job-success-value]");
+        const ring = card.querySelector(".job-success-progress");
+
+        if (!number || !ring) return;
+
+        ring.setAttribute("pathLength", "100");
+        ring.style.transition = "none";
+        ring.style.strokeDasharray = "100";
+        ring.style.strokeDashoffset = "100";
+        number.textContent = "0%";
+
+        let hasStarted = false;
+
+        function animate() {
+            if (hasStarted) return;
+            hasStarted = true;
+
+            const reducedMotion = window.matchMedia(
+                "(prefers-reduced-motion: reduce)"
+            ).matches;
+
+            if (reducedMotion) {
+                number.textContent = "100%";
+                ring.style.strokeDashoffset = "0";
+                return;
+            }
+
+            const duration = 1800;
+            let startTime;
+
+            function frame(time) {
+                if (startTime === undefined) startTime = time;
+
+                const progress = Math.min(
+                    (time - startTime) / duration,
+                    1
+                );
+
+                const eased = 1 - Math.pow(1 - progress, 3);
+
+                number.textContent = Math.round(eased * 100) + "%";
+                ring.style.strokeDashoffset = String(100 - eased * 100);
+
+                if (progress < 1) {
+                    requestAnimationFrame(frame);
+                }
+            }
+
+            requestAnimationFrame(frame);
+        }
+
+        if (!("IntersectionObserver" in window)) {
+            animate();
+            return;
+        }
+
+        const observer = new IntersectionObserver(function (entries) {
+            if (entries.some(entry => entry.isIntersecting)) {
+                animate();
+                observer.disconnect();
+            }
+        }, {
+            threshold: 0.15
+        });
+
+        observer.observe(card);
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initUpworkAnimation);
+    } else {
+        initUpworkAnimation();
+    }
+})();
+</script>
 </body>
 </html>
