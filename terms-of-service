@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Terms of Service | Laura van Leeuwen</title>
+
+    <meta
+        name="description"
+        content="Terms for content writing, English-to-Spanish translation and Spanish proofreading services provided by Laura van Leeuwen."
+    >
+
+    <link
+        rel="canonical"
+        href="https://lauravanleeuwen.com/terms-of-service.html"
+    >
+
+    <link
+        rel="icon"
+        type="image/webp"
+        sizes="64x64"
+        href="/laura-van-leeuwen-favicon.webp?v=2"
+    >
+
+    <link
+        rel="preload"
+        href="/laura-van-leeuwen-logo.webp?v=2"
+        as="image"
+        type="image/webp"
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+        :root {
+            --navy: #101828;
+            --blue: #245cff;
+            --yellow: #ffc83d;
+            --cream: #f7f1e8;
+            --white: #ffffff;
+            --text: #344054;
+            --muted: #667085;
+            --border: #d8dee8;
+            --soft-border: #e4e7ec;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            color: var(--text);
+            background: var(--white);
+            font-family: "Inter", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--blue);
+            overflow-wrap: anywhere;
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--blue);
+            outline-offset: 4px;
+            border-radius: 3px;
+        }
+
+        /* HEADER */
+
+        .site-header {
+            color: var(--white);
+            background: var(--navy);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .site-header-inner {
+            width: min(900px, calc(100% - 40px));
+            min-height: 96px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 28px;
+        }
+
+        .brand,
+        .footer-brand {
+            min-width: 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        .brand-logo,
+        .footer-logo {
+            width: 54px;
+            height: 54px;
+            flex: 0 0 54px;
+            display: block;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            font-family: "Plus Jakarta Sans", Arial, sans-serif;
+            white-space: nowrap;
+        }
+
+        .brand-name-main {
+            color: var(--white);
+            font-size: 1.14rem;
+            font-weight: 700;
+            line-height: 1.05;
+            letter-spacing: -0.045em;
+        }
+
+        .brand-name-first {
+            margin-top: 5px;
+            color: var(--yellow);
+            font-size: 0.7rem;
+            font-weight: 700;
+            line-height: 1;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .site-nav,
+        .footer-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .site-nav a,
+        .footer-nav a {
+            min-height: 44px;
+            padding: 0 22px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--blue);
+            background: var(--white);
+            border: 1px solid var(--white);
+            border-radius: 999px;
+            font-size: 0.86rem;
+            font-weight: 700;
+            line-height: 1;
+            text-decoration: none;
+            transition:
+                color 0.2s ease,
+                background-color 0.2s ease,
+                border-color 0.2s ease,
+                box-shadow 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .site-nav a:hover,
+        .footer-nav a:hover {
+            color: var(--white);
+            background: var(--blue);
+            border-color: var(--blue);
+            box-shadow: 0 8px 20px rgba(36, 92, 255, 0.28);
+            transform: translateY(-1px);
+        }
+
+        /* TERMS */
+
+        .policy-hero {
+            padding: 64px 24px;
+            text-align: center;
+            background: var(--cream);
+        }
+
+        .policy-hero h1 {
+            margin: 0;
+            color: var(--navy);
+            font-size: clamp(1.9rem, 2.8vw, 2.3rem);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.035em;
+        }
+
+        .policy-section {
+            padding: 64px 32px 90px;
+        }
+
+        .policy-card {
+            width: min(806px, 100%);
+            margin: 0 auto;
+            padding: 64px 58px;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            box-shadow: 0 14px 38px rgba(16, 24, 40, 0.06);
+        }
+
+        .policy-last-updated {
+            margin: 0 0 26px;
+            color: var(--navy);
+        }
+
+        .policy-introduction {
+            margin: 0 0 38px;
+            padding: 20px 24px;
+            background: var(--cream);
+            border-left: 2px solid var(--yellow);
+            border-radius: 0 14px 14px 0;
+        }
+
+        .policy-introduction p {
+            margin: 0;
+        }
+
+        .policy-introduction p + p {
+            margin-top: 12px;
+        }
+
+        .policy-block {
+            padding: 34px 0;
+            border-top: 1px solid var(--soft-border);
+        }
+
+        .policy-block:first-of-type {
+            padding-top: 0;
+            border-top: 0;
+        }
+
+        .policy-block:last-child {
+            padding-bottom: 0;
+        }
+
+        .policy-block h2 {
+            margin: 0 0 16px;
+            color: var(--navy);
+            font-size: clamp(1.18rem, 2vw, 1.36rem);
+            font-weight: 700;
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+        }
+
+        .policy-block p {
+            margin: 0 0 14px;
+        }
+
+        .policy-block p:last-child {
+            margin-bottom: 0;
+        }
+
+        .policy-block ul {
+            margin: 14px 0;
+            padding-left: 1.25rem;
+        }
+
+        .policy-block li {
+            padding-left: 0.3rem;
+        }
+
+        .policy-block li + li {
+            margin-top: 9px;
+        }
+
+        .policy-block strong {
+            color: var(--navy);
+        }
+
+        .contact-details {
+            margin-top: 18px;
+            padding: 20px 22px;
+            background: #f8fafc;
+            border: 1px solid var(--soft-border);
+            border-radius: 14px;
+        }
+
+        .contact-details p {
+            margin: 0;
+        }
+
+        .contact-details p + p {
+            margin-top: 7px;
+        }
+
+        .back-home {
+            margin: 28px auto 0;
+            text-align: center;
+        }
+
+        .back-home a {
+            color: var(--navy);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .back-home a:hover {
+            color: var(--blue);
+        }
+
+        /* FOOTER */
+
+        .site-footer {
+            padding: 46px 28px 24px;
+            color: var(--white);
+            background: var(--navy);
+        }
+
+        .site-footer-inner,
+        .site-footer-bottom {
+            width: min(1050px, 100%);
+            margin: 0 auto;
+        }
+
+        .site-footer-inner {
+            padding-bottom: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .site-footer-main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 13px;
+        }
+
+        .site-footer-description {
+            max-width: 380px;
+            margin: 0;
+            color: #aeb9cc;
+            font-size: 0.82rem;
+            line-height: 1.55;
+        }
+
+        .site-footer-location {
+            color: #8f9bad;
+            font-size: 0.77rem;
+            line-height: 1.5;
+        }
+
+        .site-footer-location a,
+        .site-footer-legal a {
+            color: #d5dbe5;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .site-footer-location a:hover,
+        .site-footer-legal a:hover {
+            color: var(--white);
+        }
+
+        .site-footer-bottom {
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            color: #8f9bad;
+            font-size: 0.77rem;
+        }
+
+        .site-footer-legal {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+        }
+
+        .site-footer-copyright {
+            white-space: nowrap;
+        }
+
+        @media (max-width: 760px) {
+            .site-header-inner {
+                width: calc(100% - 32px);
+                min-height: 78px;
+                gap: 14px;
+            }
+
+            .brand-logo,
+            .footer-logo {
+                width: 44px;
+                height: 44px;
+                flex-basis: 44px;
+            }
+
+            .brand-name-main {
+                font-size: 0.88rem;
+            }
+
+            .brand-name-first {
+                font-size: 0.58rem;
+            }
+
+            .site-nav {
+                gap: 5px;
+            }
+
+            .site-nav a {
+                min-height: 38px;
+                padding: 0 11px;
+                font-size: 0.75rem;
+            }
+
+            .policy-hero {
+                padding: 48px 20px;
+            }
+
+            .policy-section {
+                padding: 40px 20px 62px;
+            }
+
+            .policy-card {
+                padding: 40px 28px;
+                border-radius: 18px;
+            }
+
+            .site-footer {
+                padding: 40px 20px 22px;
+            }
+
+            .site-footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 28px;
+            }
+
+            .footer-nav {
+                flex-wrap: wrap;
+            }
+
+            .site-footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+            }
+
+            .site-footer-copyright {
+                white-space: normal;
+            }
+        }
+
+        @media (max-width: 520px) {
+            .site-header .brand-name {
+                display: none;
+            }
+
+            .site-nav a {
+                min-height: 36px;
+                padding: 0 9px;
+                font-size: 0.7rem;
+            }
+
+            .policy-section {
+                padding-right: 16px;
+                padding-left: 16px;
+            }
+
+            .policy-card {
+                padding: 30px 21px;
+            }
+
+            .policy-introduction,
+            .contact-details {
+                padding: 18px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+            }
+        }
+
+        @media print {
+            .site-header,
+            .site-footer,
+            .back-home {
+                display: none;
+            }
+
+            .policy-hero,
+            .policy-section {
+                padding: 24px 0;
+                background: var(--white);
+            }
+
+            .policy-card {
+                width: 100%;
+                padding: 0;
+                border: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+
+            <a
+                class="brand"
+                href="/"
+                aria-label="Laura van Leeuwen — Home"
+            >
+                <img
+                    class="brand-logo"
+                    src="/laura-van-leeuwen-logo.webp?v=2"
+                    alt=""
+                    width="54"
+                    height="54"
+                    decoding="async"
+                    fetchpriority="high"
+                >
+
+                <span class="brand-name">
+                    <span class="brand-name-main">van leeuwen</span>
+                    <span class="brand-name-first">Laura</span>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="/#order">Order</a>
+                <a href="/#work">Work</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section class="policy-hero" aria-labelledby="terms-title">
+            <h1 id="terms-title">Terms of Service</h1>
+        </section>
+
+        <section class="policy-section">
+            <article class="policy-card">
+
+                <p class="policy-last-updated">
+                    <strong>Last updated:</strong>
+                    <time datetime="2026-10-30">30 October 2026</time>
+                </p>
+
+                <div class="policy-introduction">
+                    <p>
+                        These Terms apply to professional services provided
+                        by Laura van Leeuwen Henche, working under the
+                        professional name Laura van Leeuwen through
+                        lauravanleeuwen.com.
+                    </p>
+
+                    <p>
+                        “I”, “me” and “my” refer to the service provider.
+                        “You” and “your” refer to the business or
+                        professional requesting or purchasing the services.
+                    </p>
+
+                    <p>
+                        My statutory identification and contact details
+                        are available in the
+                        <a href="/legal-notice/">Legal Notice</a>.
+                    </p>
+                </div>
+
+                <section class="policy-block" aria-labelledby="application">
+                    <h2 id="application">
+                        1. Who these Terms apply to
+                    </h2>
+
+                    <p>
+                        These Terms apply to business and professional
+                        clients, including companies, agencies,
+                        publishers, independent professionals and
+                        authors commissioning work for their professional
+                        publishing activities.
+                    </p>
+
+                    <p>
+                        The website ordering service is intended for
+                        purchases made for business or professional
+                        purposes, rather than wholly private purposes.
+                    </p>
+
+                    <p>
+                        When ordering on behalf of a business or another
+                        person, you must have authority to do so.
+                        Nothing in these Terms removes any mandatory
+                        rights that apply to you by law.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="services">
+                    <h2 id="services">2. About my services</h2>
+
+                    <p>I provide:</p>
+
+                    <ul>
+                        <li>
+                            Original content writing in English and
+                            Spanish, including SEO articles, website copy,
+                            landing pages and marketing materials.
+                        </li>
+
+                        <li>
+                            English-to-Spanish translation and
+                            localisation of websites, software interfaces,
+                            marketing content, documentation and
+                            publishing materials.
+                        </li>
+
+                        <li>
+                            Spanish proofreading and editing at the
+                            level agreed for each project.
+                        </li>
+                    </ul>
+
+                    <p>
+                        I work across different industries. The specific
+                        subject, service, deliverables, price and delivery
+                        arrangements are confirmed for each project.
+                    </p>
+
+                    <p>
+                        Unless expressly included in the Project
+                        Confirmation, services do not include website
+                        development, uploading or publishing content,
+                        graphic design, document layout, sworn or
+                        certified translation, professional legal advice
+                        or regulatory approval.
+                    </p>
+
+                    <p>
+                        My work is produced and reviewed by a human
+                        professional. I may use standard professional
+                        software for terminology management, spelling,
+                        formatting and quality checks. I will not upload
+                        confidential client materials to publicly
+                        available generative AI tools without your
+                        permission.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="orders">
+                    <h2 id="orders">
+                        3. Website orders and project confirmation
+                    </h2>
+
+                    <p>
+                        The website allows you to select a service,
+                        word count and number of pieces and view the
+                        corresponding price before proceeding to payment.
+                    </p>
+
+                    <p>
+                        Before submitting an order, review your selections
+                        and correct any errors. The total amount payable,
+                        currency and applicable taxes must be displayed
+                        before payment is completed.
+                    </p>
+
+                    <p>
+                        By submitting an order and accepting these Terms,
+                        you request the selected service and quantity.
+                        Where you order for a business, you confirm that
+                        you are authorised to act on its behalf.
+                    </p>
+
+                    <p>
+                        Stripe’s payment confirmation acknowledges receipt
+                        of payment. It does not, by itself, confirm that
+                        I have accepted the project.
+                    </p>
+
+                    <p>
+                        I will review the order, my availability and the
+                        materials or instructions supplied. If I can
+                        accept the project, I will send a written Project
+                        Confirmation, normally within one business day.
+                    </p>
+
+                    <p>
+                        The Project Confirmation sets out the service,
+                        quantity, language, intended market, deliverables,
+                        price, currency, applicable taxes, delivery
+                        arrangements and included revisions.
+                    </p>
+
+                    <p>
+                        The Project Confirmation, these Terms and the
+                        written brief accepted by both parties together
+                        form the project agreement.
+                    </p>
+
+                    <p>
+                        If a material part of the order needs to change,
+                        such as its price, scope or delivery date,
+                        I will ask for your written agreement before
+                        starting work.
+                    </p>
+
+                    <p>
+                        If I cannot accept the order, or we cannot agree
+                        on the necessary changes before work begins,
+                        I will cancel it and refund the payment in full.
+                    </p>
+
+                    <p>
+                        A separate signature is not required unless we
+                        agree to use an additional project agreement.
+                        Separately negotiated written terms accepted
+                        by both parties take precedence where they
+                        expressly modify these Terms.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="responsibilities"
+                >
+                    <h2 id="responsibilities">
+                        4. Your responsibilities
+                    </h2>
+
+                    <p>
+                        Please provide the information and materials
+                        needed for the work, including source files,
+                        target language and audience, intended market,
+                        terminology preferences, style guides and
+                        relevant references.
+                    </p>
+
+                    <p>You are responsible for ensuring that:</p>
+
+                    <ul>
+                        <li>
+                            You have permission to use the supplied
+                            materials and authorise their translation,
+                            editing or adaptation.
+                        </li>
+
+                        <li>
+                            Your instructions, business information and
+                            billing details are accurate and complete.
+                        </li>
+
+                        <li>
+                            Any access credentials or permissions you
+                            provide are authorised.
+                        </li>
+
+                        <li>
+                            You answer reasonable questions and provide
+                            feedback within the agreed timeframe.
+                        </li>
+
+                        <li>
+                            Product specifications, prices, financial
+                            figures, legal references, claims, offers
+                            and other facts you supply are current
+                            and accurate.
+                        </li>
+                    </ul>
+
+                    <p>
+                        Any research, source verification or specialist
+                        review included in my service will be stated
+                        in the agreed scope. You remain responsible
+                        for obtaining any professional or regulatory
+                        approval required before publication.
+                    </p>
+
+                    <p>
+                        If materials are missing, unclear or changed
+                        after work begins, the deadline or price may
+                        need to change. I will discuss this with you
+                        before carrying out additional paid work.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="payment">
+                    <h2 id="payment">5. Fees, VAT and payment</h2>
+
+                    <p>
+                        The price, currency, payment method and required
+                        advance payment are displayed during checkout
+                        or stated in the Project Confirmation.
+                    </p>
+
+                    <p>
+                        Prices quoted for business and professional
+                        clients exclude VAT unless expressly stated
+                        otherwise. VAT is added where legally required.
+                        The total amount, including applicable taxes,
+                        is confirmed before payment.
+                    </p>
+
+                    <p>
+                        Website payments are processed by Stripe.
+                        A payment collected before the Project
+                        Confirmation is an advance payment pending
+                        acceptance of the order. If I do not accept
+                        the order, I will refund it to the original
+                        payment method.
+                    </p>
+
+                    <p>
+                        Please provide accurate billing information,
+                        including your legal or business name, billing
+                        address and tax identification details where
+                        applicable. I will use these details to issue
+                        the relevant invoice. A payment receipt does
+                        not replace the service invoice.
+                    </p>
+
+                    <p>
+                        Additional work requires your written approval
+                        and may be charged separately. Changes to
+                        published rates do not affect confirmed projects.
+                    </p>
+
+                    <p>
+                        If payment becomes overdue, I may pause work
+                        after notifying you and allowing a reasonable
+                        opportunity to resolve the issue. Any resulting
+                        change to delivery will be communicated
+                        in writing.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="delivery">
+                    <h2 id="delivery">6. Delivery</h2>
+
+                    <p>
+                        I will deliver the work in the format and through
+                        the channel stated in the Project Confirmation
+                        or otherwise agreed in writing.
+                    </p>
+
+                    <p>
+                        The delivery period begins once I have confirmed
+                        the project and received any required cleared
+                        advance payment, complete source materials
+                        and the instructions reasonably needed
+                        to begin.
+                    </p>
+
+                    <p>
+                        If I become aware of a delay, I will notify you
+                        promptly and discuss a revised delivery date.
+                        Please tell me before confirmation if a deadline
+                        is essential.
+                    </p>
+
+                    <p>
+                        If I cannot complete the agreed work, I will
+                        refund payments attributable to services
+                        not provided.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="revisions">
+                    <h2 id="revisions">7. Review and revisions</h2>
+
+                    <p>
+                        Please review the delivered work and send your
+                        feedback in one consolidated request.
+                    </p>
+
+                    <p>
+                        Unless the Project Confirmation states otherwise,
+                        the price includes one consolidated revision
+                        request submitted within 14 calendar days
+                        of delivery.
+                    </p>
+
+                    <p>
+                        I will correct objective errors attributable
+                        to my work and departures from the agreed
+                        brief without an additional charge.
+                    </p>
+
+                    <p>
+                        Included revisions do not cover new source text,
+                        changes to the approved brief, a different
+                        target language, market or tone, additional
+                        deliverables, extensive rewriting, new factual
+                        research or preferences introduced after delivery.
+                        These changes may require a separate quote.
+                    </p>
+
+                    <p>
+                        Proofreading covers the level of review agreed
+                        for the project. Checking a translation against
+                        its source, extensive rewriting and specialist
+                        fact-checking are included only when
+                        expressly agreed.
+                    </p>
+
+                    <p>
+                        The revision request period does not limit
+                        rights that cannot be restricted under
+                        applicable law.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="cancellation"
+                >
+                    <h2 id="cancellation">
+                        8. Cancellation and refunds
+                    </h2>
+
+                    <p>
+                        You may request cancellation by notifying
+                        me in writing.
+                    </p>
+
+                    <p>
+                        If the project has not been confirmed, or
+                        I cannot accept your order, I will refund
+                        the relevant payment in full.
+                    </p>
+
+                    <p>
+                        After confirmation, you must pay for work
+                        already completed and unavoidable costs you
+                        expressly approved, up to the agreed project
+                        price. I will refund any remaining balance.
+                    </p>
+
+                    <p>
+                        If you believe the work does not meet the
+                        agreed brief, contact me promptly so I can
+                        investigate and, where appropriate, correct
+                        the issue. Any price reduction or refund
+                        will reflect the affected work and the
+                        circumstances of the project.
+                    </p>
+
+                    <p>
+                        This section does not replace any mandatory
+                        cancellation rights or remedies that apply
+                        by law.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="rights-work">
+                    <h2 id="rights-work">
+                        9. Rights to the delivered work
+                    </h2>
+
+                    <p>
+                        You retain your rights in the materials
+                        you supply.
+                    </p>
+
+                    <p>
+                        Once full payment is received, I grant you
+                        a worldwide, exclusive licence, for the
+                        duration of the applicable copyright, to
+                        reproduce, publish, distribute, communicate
+                        to the public and adapt the final commissioned
+                        text for the purposes and channels identified
+                        in the Project Confirmation.
+                    </p>
+
+                    <p>
+                        For agency and white-label projects, this
+                        includes permission to transfer or sublicense
+                        those usage rights to the end client identified
+                        or described in the brief. No contractual credit
+                        is required, subject to mandatory moral rights.
+                    </p>
+
+                    <p>
+                        This licence applies only to rights I hold.
+                        It does not transfer rights in third-party
+                        materials, source materials supplied by you,
+                        unused drafts, pre-existing templates,
+                        terminology resources or working methods.
+                        Different or broader rights must be agreed
+                        in writing.
+                    </p>
+
+                    <p>
+                        For literary and publishing projects, any
+                        specific arrangements concerning publication,
+                        editions, territories, formats and translator
+                        or editor credit will be agreed in writing.
+                    </p>
+
+                    <p>
+                        I will not publish your commissioned work,
+                        identify you as a client or display your logo
+                        in my portfolio without your permission.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="confidentiality"
+                >
+                    <h2 id="confidentiality">
+                        10. Confidentiality
+                    </h2>
+
+                    <p>
+                        I will treat non-public project materials,
+                        business information and communications as
+                        confidential, whether or not they are marked
+                        confidential.
+                    </p>
+
+                    <p>
+                        I will use that information only to assess,
+                        complete and administer your project.
+                        Disclosure will be limited to what is
+                        necessary for those purposes or legally
+                        required.
+                    </p>
+
+                    <p>
+                        This obligation does not cover information
+                        that becomes public without a breach of
+                        confidentiality, was already lawfully known
+                        to me, is independently developed or is
+                        lawfully received from another source.
+                    </p>
+
+                    <p>
+                        If disclosure is legally required, I will
+                        limit it to what is necessary and notify
+                        you where legally permitted. Any separate
+                        confidentiality agreement we sign also applies.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="personal-data"
+                >
+                    <h2 id="personal-data">
+                        11. Personal data and payment processing
+                    </h2>
+
+                    <p>
+                        My
+                        <a href="/privacy-policy/">Privacy Policy</a>
+                        explains how I handle personal data relating
+                        to website visitors, enquiries, clients
+                        and projects.
+                    </p>
+
+                    <p>
+                        Website payments are processed by Stripe.
+                        Stripe processes the payment, contact,
+                        billing, business and tax information needed
+                        for the transaction under its own privacy
+                        terms and applicable obligations.
+                    </p>
+
+                    <p>
+                        Information entered in the website order
+                        form may pass through the infrastructure
+                        used to prepare checkout, as explained
+                        in the Privacy Policy.
+                    </p>
+
+                    <p>
+                        Do not put confidential source text or
+                        unnecessary personal data in payment fields.
+                        Provide project documents and detailed briefs
+                        through the communication channel agreed
+                        for the project.
+                    </p>
+
+                    <p>
+                        If I will process personal data on your
+                        behalf as a processor, we will put an
+                        appropriate data processing agreement in
+                        place before that processing begins.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="seo-specialist"
+                >
+                    <h2 id="seo-specialist">
+                        12. SEO results and specialist review
+                    </h2>
+
+                    <p>
+                        I will perform the agreed services with
+                        reasonable care and skill. I cannot guarantee
+                        search engine rankings, traffic, conversions,
+                        revenue or other commercial results.
+                    </p>
+
+                    <p>
+                        SEO performance depends on factors outside
+                        my control, including competition, search
+                        engine changes, website performance and
+                        how the content is implemented.
+                    </p>
+
+                    <p>
+                        My services concern language and content.
+                        Writing or translating legal, financial,
+                        health, technical or other specialist material
+                        does not constitute professional advice,
+                        certification or regulatory approval.
+                    </p>
+
+                    <p>
+                        You are responsible for obtaining any
+                        specialist, legal or regulatory review
+                        required before publication. This includes
+                        checking claims, disclosures, product
+                        specifications and other information for
+                        the intended market.
+                    </p>
+
+                    <p>
+                        This does not remove my responsibility to
+                        follow the agreed brief, carry out any
+                        research included in the scope and perform
+                        the work with reasonable care and skill.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="liability">
+                    <h2 id="liability">13. Liability</h2>
+
+                    <p>
+                        Each party is responsible for its own
+                        breaches of the agreement in accordance
+                        with applicable law.
+                    </p>
+
+                    <p>
+                        I am not responsible for problems caused
+                        by inaccurate or incomplete client materials,
+                        unauthorised changes to my work, use outside
+                        the agreed scope or failure to obtain
+                        necessary specialist approval. This does
+                        not exclude responsibility for errors
+                        attributable to my own work.
+                    </p>
+
+                    <p>
+                        To the extent permitted by law, I will
+                        not be liable for indirect or consequential
+                        losses, loss of profit, revenue, business,
+                        opportunity or anticipated savings.
+                    </p>
+
+                    <p>
+                        To the extent permitted by law, my total
+                        liability arising from a project will not
+                        exceed the fees paid or payable for
+                        that project.
+                    </p>
+
+                    <p>
+                        Nothing in these Terms excludes or limits
+                        liability for fraud, wilful misconduct,
+                        gross negligence, breach of confidentiality
+                        or any liability that cannot lawfully
+                        be excluded or limited.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="outside-control"
+                >
+                    <h2 id="outside-control">
+                        14. Events outside my control
+                    </h2>
+
+                    <p>
+                        Subject to applicable law, I will not be
+                        responsible for a delay or failure caused
+                        by events reasonably outside my control,
+                        such as serious illness, power or internet
+                        outages, failures of third-party platforms,
+                        cyber incidents, natural disasters or
+                        government action.
+                    </p>
+
+                    <p>
+                        I will notify you as soon as reasonably
+                        possible, take reasonable steps to reduce
+                        the effect and discuss a revised delivery
+                        date or another appropriate solution.
+                    </p>
+
+                    <p>
+                        Payments for services not provided remain
+                        subject to the cancellation and refund
+                        provisions above.
+                    </p>
+                </section>
+
+                <section
+                    class="policy-block"
+                    aria-labelledby="ending-project"
+                >
+                    <h2 id="ending-project">
+                        15. Suspending or ending a project
+                    </h2>
+
+                    <p>
+                        Either party may end a project if the other
+                        materially breaches the agreement and does
+                        not remedy the breach within a reasonable
+                        period after written notice.
+                    </p>
+
+                    <p>
+                        I may suspend or stop work if payment is
+                        overdue, required information is not supplied,
+                        communication makes completion impracticable
+                        or continuing would be unlawful.
+                    </p>
+
+                    <p>
+                        I will explain the reason where legally
+                        permitted and give you a reasonable opportunity
+                        to resolve an issue that can be remedied.
+                    </p>
+
+                    <p>
+                        If a project ends, I will provide an account
+                        of completed work, outstanding fees and any
+                        refund due. Rights relating to paid
+                        deliverables, confidentiality and provisions
+                        intended to continue will remain in effect.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="website-use">
+                    <h2 id="website-use">
+                        16. Website use and external links
+                    </h2>
+
+                    <p>
+                        You must not use the website to distribute
+                        malicious software, gain unauthorised access,
+                        obtain protected or confidential material
+                        unlawfully or interfere with its operation.
+                    </p>
+
+                    <p>
+                        Website content and portfolio samples may
+                        belong to me or their respective owners.
+                        Their display does not grant permission
+                        to reproduce or commercially reuse them,
+                        except where permitted by law.
+                    </p>
+
+                    <p>
+                        External websites apply their own terms
+                        and privacy policies. Temporary website
+                        unavailability does not cancel a confirmed
+                        project or remove either party’s obligations.
+                    </p>
+
+                    <p>
+                        Further conditions for website use appear
+                        in the
+                        <a href="/legal-notice/">Legal Notice</a>.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="law-disputes">
+                    <h2 id="law-disputes">
+                        17. Governing law and disputes
+                    </h2>
+
+                    <p>
+                        These Terms and the services provided under
+                        them are governed by Spanish law, without
+                        prejudice to mandatory protections under
+                        other applicable laws.
+                    </p>
+
+                    <p>
+                        If you have a complaint, email
+                        <a href="mailto:contact@lauravanleeuwen.com">
+                            contact@lauravanleeuwen.com</a>
+                        so I can investigate and seek a resolution.
+                    </p>
+
+                    <p>
+                        Unresolved disputes will be submitted to
+                        the courts competent under applicable law.
+                        Where legally permitted in a negotiated
+                        business-to-business agreement, we may agree
+                        in writing on a competent court.
+                    </p>
+
+                    <p>
+                        If a provision is held unenforceable,
+                        the remaining provisions will continue
+                        to apply to the extent permitted by law.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="changes">
+                    <h2 id="changes">
+                        18. Changes to these Terms
+                    </h2>
+
+                    <p>
+                        I may update these Terms for future orders
+                        and projects. The current version and
+                        update date will appear on this page.
+                    </p>
+
+                    <p>
+                        The version accepted when you place an order
+                        continues to apply to that project unless
+                        we expressly agree otherwise in writing
+                        or a change is required by law.
+                    </p>
+                </section>
+
+                <section class="policy-block" aria-labelledby="contact">
+                    <h2 id="contact">19. Contact</h2>
+
+                    <p>
+                        For questions about these Terms or a project,
+                        contact:
+                    </p>
+
+                    <div class="contact-details">
+                        <p><strong>Laura van Leeuwen</strong></p>
+
+                        <p>
+                            <strong>Email:</strong>
+                            <a href="mailto:contact@lauravanleeuwen.com">
+                                contact@lauravanleeuwen.com
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Legal information:</strong>
+                            <a href="/legal-notice/">Legal Notice</a>
+                        </p>
+                    </div>
+                </section>
+
+            </article>
+
+            <div class="back-home">
+                <a href="/">
+                    <span aria-hidden="true">←</span>
+                    Back to homepage
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+
+            <div class="site-footer-main">
+
+                <a
+                    class="footer-brand"
+                    href="/"
+                    aria-label="Laura van Leeuwen — Home"
+                >
+                    <img
+                        class="footer-logo"
+                        src="/laura-van-leeuwen-logo.webp?v=2"
+                        alt=""
+                        width="54"
+                        height="54"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <span class="brand-name">
+                        <span class="brand-name-main">van leeuwen</span>
+                        <span class="brand-name-first">Laura</span>
+                    </span>
+                </a>
+
+                <p class="site-footer-description">
+                    SEO content in English and Spanish,
+                    English-to-Spanish translation and Spanish proofreading.
+                </p>
+
+                <div class="site-footer-location">
+                    Based in Spain · Working worldwide ·
+                    <a href="mailto:contact@lauravanleeuwen.com">
+                        contact@lauravanleeuwen.com
+                    </a>
+                </div>
+
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <a href="/#order">Order</a>
+                <a href="/#work">Work</a>
+                <a href="/#contact">Contact</a>
+            </nav>
+
+        </div>
+
+        <div class="site-footer-bottom">
+
+            <div class="site-footer-legal">
+                <a href="/privacy-policy/">Privacy Policy</a>
+                <a
+                    href="/terms-of-service.html"
+                    aria-current="page"
+                >
+                    Terms of Service
+                </a>
+                <a href="/legal-notice/">Legal Notice</a>
+            </div>
+
+            <span class="site-footer-copyright">
+                © 2026 Laura van Leeuwen. All rights reserved.
+            </span>
+
+        </div>
+    </footer>
+
+</body>
+</html>
